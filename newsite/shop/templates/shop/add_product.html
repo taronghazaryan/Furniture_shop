@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'shop/base.html' %}
 
-</body>
-</html>
+{% block title %}
+    <title>Add new product</title>
+{% endblock%}
+
+{% block body %}
+    <h2>Add New Product</h2>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">
+                Add Product
+            </button>
+        </form>
+    </div>
+    <div>
+        <a href="{% url 'shop:products' %}">Back to Products</a>
+    </div>
+{% endblock %}
