@@ -5,8 +5,6 @@ from django.http import  HttpRequest
 # Register your models here.
 
 
-
-
 class OrderInLine(admin.TabularInline):
     model = Product.orders.through
 

@@ -5,6 +5,12 @@
 {% endblock%}
 
 {% block body %}
-
+<div>
+    <ul>
+        {% for order in orders %}
+        <li>{{ order.delivery_address }}</li>
+        {% endfor %}
+    </ul>
+</div>
 
 {% endblock %}

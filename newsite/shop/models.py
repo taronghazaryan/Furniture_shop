@@ -14,7 +14,7 @@ class Product(models.Model):
 
     def __str__(self):
 
-        return f'Product: {self.name}'
+        return f'product :{self.pk}, product name: {self.name}'
 
 
 class Order(models.Model):
