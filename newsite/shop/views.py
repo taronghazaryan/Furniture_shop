@@ -25,8 +25,10 @@ def products(request):
 
 def orders(request):
 
-    all_orders = Order.objects.all()
-
+    if Order.objects.all():
+        all_orders = Order.objects.all()
+    else:
+        return HttpResponse('Orders not found')
     context = {
         'orders': all_orders
     }
@@ -66,8 +68,9 @@ def create_order(request):
             for product in my_products:
                 order.products.add(product)
             if created:
-                order.save()
-                return HttpResponse("Success")
+
+                return redirect('shop:orders')
+
             else:
                 return HttpResponse("Order already exists")
     else:

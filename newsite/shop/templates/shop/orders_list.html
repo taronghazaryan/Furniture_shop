@@ -2,15 +2,66 @@
 
 {% block title %}
     <title>All orders</title>
-{% endblock%}
+{% endblock %}
+{% block head %}
+<style>
+    div{
+    width: 300px;
+    border: 2px solid red;
+    background-color: gray;
+    margin: 20px;
 
+    }
+
+    a{
+    font-size: 20px;
+    }
+    div h2{
+    text-align: center;
+    }
+    footer{
+    border: 1px solid yellow;
+    background-color: orange;
+
+    }
+
+    footer a{
+    text-decoration: None;
+    }
+
+
+</style>
+{% endblock %}
 {% block body %}
-<div>
-    <ul>
-        {% for order in orders %}
-        <li>{{ order.delivery_address }}</li>
-        {% endfor %}
-    </ul>
-</div>
+    {% for order in orders %}
+    <div>
+        <h2>Order</h2>
+        <hr>
+        <ul>
+
+            <li>{{ order.delivery_address }}</li><br>
+               <li>Created at: {{ order.created_at }}</li><br>
+                <li>User: {{ order.user }}</li><br>
+                <li>Promo Code: {{ order.promo_code }}</li><br>
+                <ul>
+                    <p>Products</p>
+                    {% for product in order.products.all %}
+                    <li>{{product.name}} for ${{product.price}}</li>
+                    {% endfor %}
+                </ul>
+
+            <hr>
+
+        </ul>
+
+    </div>
+ {% endfor %}
+<article>
+    <footer>
+        <a href="{% url 'shop:products' %}">All products</a><br>
+        <a href="{% url 'shop:add_product' %}">Add product</a><br>
+        <a href="{% url 'shop:create_order' %}">Create order</a><br>
+    </footer>
+</article>
 
 {% endblock %}

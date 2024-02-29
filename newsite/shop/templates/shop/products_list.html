@@ -22,8 +22,13 @@
         {% endfor %}
 
     </ul>
-    <div>
-        <a href="{% url 'shop:add_product' %}">Add Product</a>
-    </div>
+
+<article>
+    <footer>
+        <a href="{% url 'shop:orders' %}">Orders</a><br>
+        <a href="{% url 'shop:add_product' %}">Add product</a><br>
+        <a href="{% url 'shop:create_order' %}">Create order</a><br>
+    </footer>
+</article>
 
 {% endblock %}
