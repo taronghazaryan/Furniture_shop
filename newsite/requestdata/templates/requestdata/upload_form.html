@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
+    <button  type="submit">Upload</button>
 </form>
 {{ request.user_agent }}
 {{ request.user_ip }}

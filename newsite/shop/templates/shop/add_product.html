@@ -9,7 +9,12 @@
     <div>
         <form method="post">
             {% csrf_token %}
-            {{ form }}
+            <label id="id_name">Product Name:</label>
+            <input placeholder="Product Name" type="text" name="name" id="id_name" required><br>
+            <label id="id_price" >Price:</label>
+            <input placeholder="Price" type="number" name="price" id="id_price" required><br>
+            <label id="description">Description:</label>
+            <textarea placeholder="Description Text" type="text" name="description" id="description" required></textarea>
             <button type="submit">
                 Add Product
             </button>

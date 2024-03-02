@@ -1,0 +1,19 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+<title>{{ product.name }}</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Product {{ product.name }}</h1>
+    <li>Price: $ {{ product.price }}</li>
+    <li>Description: {{ product.description }}</li>
+    <li>Created at: {{ product.created_at }}</li>
+    <li>Archived:
+         {% if product.archived %}
+              yes
+         {% else %}
+              no
+         {% endif %}
+    </li>
+{% endblock %}

@@ -1,8 +1,9 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Product, Order
 from django.contrib.auth.models import User
 from .forms import AddProduct, CreateOrderForm
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest, Http404
+from django.views import View
 # Create your views here.
 
 
@@ -34,6 +35,17 @@ def orders(request):
     }
 
     return render(request, 'shop/orders_list.html', context=context)
+
+
+class ProductDetails(View):
+
+    def get(self, request: HttpRequest, pk: int):
+        product = get_object_or_404(Product, pk=pk)
+
+        context = {
+            'product': product,
+        }
+        return render(request, 'shop/product_detail.html', context=context)
 
 
 def add_product(request):

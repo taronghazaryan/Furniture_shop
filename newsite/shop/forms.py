@@ -38,3 +38,4 @@ class CreateOrderForm(forms.ModelForm):
 
         model = Order
         fields = ['delivery_address', 'promo_code', 'products']
+

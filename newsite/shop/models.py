@@ -9,7 +9,7 @@ class Product(models.Model):
     name = models.CharField(max_length=20)
     description = models.TextField(null=False, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    created_at = models.TimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     archived = models.BooleanField(default=False)
 
     def __str__(self):
