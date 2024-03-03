@@ -1,0 +1,15 @@
+{% extends 'shop/base.html' %}
+
+
+{% block title %}
+<title>Delete {{ product.name }}</title>
+{% endblock %}
+
+{% block body %}
+    <h2>Ar you sure?</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Archived</button>
+    </form>
+{% endblock %}

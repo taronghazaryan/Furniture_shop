@@ -2,7 +2,7 @@ from django import forms
 from .models import Product, Order
 from django.core import validators
 
-
+# long version for create Product
 # class AddProduct(forms.Form):
 #
 #     name = forms.CharField(max_length=20)
@@ -16,12 +16,15 @@ from django.core import validators
 #         )]
 #     )
 
+
+# short version
 class AddProduct(forms.ModelForm):
     class Meta:
 
         model = Product
         fields = ['name', 'price', 'description']
 
+# long version to Create Order
 # class CreateOrderForm(forms.Form):
 #     class Meta:
 #         model = Order
@@ -32,6 +35,7 @@ class AddProduct(forms.ModelForm):
 #     products = forms.ModelMultipleChoiceField(queryset=Product.objects.all(), widget=forms.CheckboxSelectMultiple)
 
 
+# short version
 class CreateOrderForm(forms.ModelForm):
 
     class Meta:

@@ -16,4 +16,8 @@
               no
          {% endif %}
     </li>
+    <div>
+        <a href="{% url 'shop:product_update' pk=product.pk %}">Update</a>
+        <a href="{% url 'shop:product_archived' pk=product.pk %}">Archived</a>
+    </div>
 {% endblock %}

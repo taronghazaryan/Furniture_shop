@@ -7,7 +7,7 @@
 {% block body %}
     <ul>
         {% for item in products %}
-        <h3>Name: <a href="{% url 'shop:details' pk=item.pk %}">{{ item.name }}</a></h3>
+        <h3>Name: <a href="{% url 'shop:product_details' pk=item.pk %}">{{ item.name }}</a></h3>
             <li>Archived:
                 {% if item.archived %}
                     yes
