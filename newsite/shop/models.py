@@ -21,6 +21,6 @@ class Order(models.Model):
 
     delivery_address = models.CharField(max_length=30)
     promo_code = models.CharField(max_length=20)
-    created_at = models.TimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.PROTECT)
     products = models.ManyToManyField(Product, related_name='orders')

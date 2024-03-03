@@ -1,0 +1,17 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+<title>{{ order.name }}</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Delivery Address: {{ order.delivery_address }}</h1>
+    <li>Promocode: {{ order.promo_code }}</li>
+    <li>Created At: {{ order.created_at }}</li>
+    <div>
+        <a href="{% url 'shop:orders'%}">Orders</a>
+        <a href="{% url 'shop:order_update' pk=order.pk%}">Update</a>
+        <a href="{% url 'shop:order_delete' pk=order.pk%}">Delete</a>
+
+    </div>
+{% endblock %}

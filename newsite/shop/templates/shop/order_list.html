@@ -55,9 +55,9 @@
     </header>
 </article>
 <div class="par">
-    {% for order in orders %}
+    {% for order in object_list %}
     <div class="cls">
-        <h2>{{order.user}}'s Order</h2>
+        <h2><a href="{% url 'shop:order_detail' pk=order.pk %}">{{ order.user }}'s Order</a></h2>
         <hr>
         <ul>
 
@@ -76,6 +76,7 @@
         </ul>
 
     </div>
+
  {% endfor %}
 </div>
 <article>
