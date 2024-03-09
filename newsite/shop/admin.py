@@ -1,7 +1,8 @@
 from django.contrib import admin
 from .models import Product, Order
 from django.db.models import QuerySet
-from django.http import  HttpRequest
+from django.http import HttpRequest
+from .admin_mixins import ExportAsMixinCsv
 # Register your models here.
 
 
@@ -20,11 +21,12 @@ def mark_unarchived(modeladmin: admin.ModelAdmin, queryset: QuerySet):
 
 
 @admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(admin.ModelAdmin, ExportAsMixinCsv):
 
     actions = [
         mark_archived,
         mark_unarchived,
+        'export_csv',
     ]
 
     inlines = [

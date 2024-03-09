@@ -5,18 +5,19 @@ from .views import (shop_index,
                     ProductDetailsView,
                     UpdateProductView,
                     ArchivedProductView,
-                    ListOrderView,
+                    # ListOrderView,
                     DetailOrderView,
                     CreateOrderView,
                     UpdateOrderView,
-                    DeleteOrderView)
+                    DeleteOrderView,
+                    user_orders)
 
 app_name = 'shop'
 
 urlpatterns = [
     path('', shop_index, name='index'),
     path('products/', ListProductView.as_view(), name='products'),
-    path('orders/', ListOrderView.as_view(), name='orders'),
+    # path('orders/', ListOrderView.as_view(), name='orders'),
     path('product/add/', CreateProductView.as_view(), name='add_product'),
     path('orders/create/', CreateOrderView.as_view(), name='create_order'),
     path('products/<int:pk>/', ProductDetailsView.as_view(), name='product_details'),
@@ -25,4 +26,5 @@ urlpatterns = [
     path('orders/<int:pk>/', DetailOrderView.as_view(), name='order_detail'),
     path('orders/<int:pk>/update', UpdateOrderView.as_view(), name='order_update'),
     path('orders/<int:pk>/delete', DeleteOrderView.as_view(), name='order_delete'),
+    path('orders/my/', user_orders, name='user_orders'),
 ]

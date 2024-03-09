@@ -61,7 +61,7 @@
 
     {% if orders %}
         <div class="par">
-            {% for order in object_list %}
+            {% for order in orders %}
             <div class="cls">
                 <h2><a href="{% url 'shop:order_detail' pk=order.pk %}">{{ order.user }}'s Order</a></h2>
                 <hr>
@@ -70,13 +70,6 @@
                     <li>{{ order.delivery_address }}</li><br>
                        <li>Created at: {{ order.created_at }}</li><br>
                         <li>Promo Code: {{ order.promo_code }}</li><br>
-                        <ul>
-                            <p>Products</p>
-                            {% for product in order.products.all %}
-                            <li>{{product.name}} for ${{product.price}}</li>
-                            {% endfor %}
-                        </ul>
-
                     <hr>
 
                 </ul>
@@ -93,7 +86,7 @@
             <a href="{% url 'shop:products' %}">All products</a><br>
             <a href="{% url 'shop:add_product' %}">Add product</a><br>
             <a href="{% url 'shop:create_order' %}">Create order</a><br>
-            <a href="/accounts/user_page/">My page  {{ request.user }}</a>
+            <a href="/accounts/user_page/">My page <code>{{ request.user }}</code></a>
         </footer>
     </article>
 

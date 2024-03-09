@@ -1,15 +1,21 @@
 {% extends 'shop/base.html' %}
 
 {% block title %}
-<title>{{ order.name }}</title>
+<title>{{ order.user}}'s order ( {{ order.pk }} )</title>
 {% endblock %}
 
 {% block body %}
     <h1>Delivery Address: {{ order.delivery_address }}</h1>
     <li>Promocode: {{ order.promo_code }}</li>
     <li>Created At: {{ order.created_at }}</li>
+    <ul>
+        <p>Products</p>
+        {% for product in order.products.all %}
+        <li><a href="{% url 'shop:product_details' pk=product.pk %}">{{product.name}}</a>  for ${{product.price}}</li>
+        {% endfor %}
+    </ul>
     <div>
-        <a href="{% url 'shop:orders'%}">Orders</a>
+        <a href="{% url 'shop:user_orders'%}">Orders</a>
         <a href="{% url 'shop:order_update' pk=order.pk%}">Update</a>
         <a href="{% url 'shop:order_delete' pk=order.pk%}">Delete</a>
 

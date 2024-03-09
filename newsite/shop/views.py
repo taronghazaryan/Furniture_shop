@@ -2,11 +2,13 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Product, Order
 from django.contrib.auth.models import User
 from .forms import AddProduct, CreateOrderForm
-from django.http import HttpResponse, HttpRequest, Http404, HttpResponseRedirect
+from django.http import HttpResponse, HttpRequest, Http404, HttpResponseRedirect, HttpResponseForbidden
 from django.views import View
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView
 from django.urls import reverse_lazy
 from datetime import datetime
+from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 # Create your views here.
 
 
@@ -55,9 +57,6 @@ def shop_index(request):
 #     return render(request, 'shop/add_product.html', context=context)
 
 
-
-
-
 """All for Products"""
 
 
@@ -68,7 +67,15 @@ class ListProductView(ListView):
     context_object_name = 'products'
 
 
-class CreateProductView(CreateView):
+# @login_required
+class CreateProductView(PermissionRequiredMixin, CreateView):
+    permission_required = ['shop.add_product',]
+    """are a user superuser ,returned True or False"""
+    # def test_func(self):
+    #     return self.request.user.is_superuser
+    #
+    # def handle_no_permission(self):
+    #     return HttpResponseForbidden()
 
     model = Product  # for teg form
     template_name = 'shop/add_product.html'  # for import teg input in html
@@ -83,7 +90,10 @@ class ProductDetailsView(DetailView):
     context_object_name = 'product'
 
 
-class UpdateProductView(UpdateView):
+class UpdateProductView(UserPassesTestMixin, UpdateView):
+    def test_func(self):
+        return not self.request.user.is_superuser
+
     model = Product
     fields = 'name', 'price', 'description'
     template_name_suffix = '_update_form'
@@ -100,7 +110,10 @@ class UpdateProductView(UpdateView):
         return super().form_valid(form)
 
 
-class ArchivedProductView(DeleteView):
+# @permission_required('myauth.change_product', raise_exception=True)
+class ArchivedProductView(UserPassesTestMixin, DeleteView):
+    def test_func(self):
+        return self.request.user.is_superuser
 
     model = Product
     success_url = reverse_lazy('shop:products')
@@ -127,33 +140,39 @@ class ArchivedProductView(DeleteView):
 #     return render(request, 'shop/order_list.html', context=context)
 
 
-class ListOrderView(ListView):
-    """.select_related('user'):
-    This is used to perform an SQL join to fetch related user objects along
-    with the orders in one query to avoid the N+1 query problem.
-     This is beneficial for performance when accessing related objects.
-        .prefetch_related('products'):
-    This is used to prefetch related products for each order.
-    It helps to minimize database queries by fetching related objects in a single query,
-     which can be advantageous when iterating over the queryset."""
+# class ListOrderView(ListView, LoginRequiredMixin):
+#     """.select_related('user'):
+#     This is used to perform an SQL join to fetch related user objects along
+#     with the orders in one query to avoid the N+1 query problem.
+#      This is beneficial for performance when accessing related objects.
+#         .prefetch_related('products'):
+#     This is used to prefetch related products for each order.
+#     It helps to minimize database queries by fetching related objects in a single query,
+#      which can be advantageous when iterating over the queryset."""
+#     queryset = (Order.objects
+#                 .select_related('user')
+#                 .prefetch_related('products'))
+
+
+class DetailOrderView(LoginRequiredMixin, DetailView):
+    # def test_func(self):
+    #     return self.request.user.is_superuser
+
     queryset = (Order.objects
                 .select_related('user')
                 .prefetch_related('products'))
 
 
-class DetailOrderView(DetailView):
-
-    queryset = (Order.objects
-                .select_related('user')
-                .prefetch_related('products'))
-
-
-class CreateOrderView(CreateView):
+class CreateOrderView(LoginRequiredMixin, CreateView):
 
     model = Order
-    fields = 'delivery_address', 'promo_code', 'products', 'user'
+    fields = 'delivery_address', 'promo_code', 'products'
     template_name = 'shop/create_order.html'
-    success_url = reverse_lazy('shop:orders')
+    success_url = reverse_lazy('shop:user_orders')
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user  # Set the user from the request
+        return super().form_valid(form)
 
 # def create_order(request):
 #     if request.method == 'POST':
@@ -185,7 +204,7 @@ class CreateOrderView(CreateView):
 #     return render(request, 'shop/create_order.html', context=context)
 
 
-class UpdateOrderView(UpdateView):
+class UpdateOrderView(LoginRequiredMixin, UpdateView):
 
     model = Order
     fields = 'delivery_address', 'promo_code', 'user'
@@ -196,7 +215,9 @@ class UpdateOrderView(UpdateView):
                        kwargs={'pk': self.object.pk})
 
 
-class DeleteOrderView(DeleteView):
+class DeleteOrderView(UserPassesTestMixin, DeleteView):
+    def test_func(self):
+        return self.request.user.is_superuser
 
     model = Order
     success_url = reverse_lazy('shop:orders')
@@ -206,5 +227,18 @@ class DeleteOrderView(DeleteView):
         self.object.delete()
         return HttpResponseRedirect(success_url)
 
+
+@login_required
+def user_orders(request):
+    if request.user.is_superuser:
+        user_orders_list = Order.objects.all()
+    else:
+        user_orders_list = Order.objects.filter(user=request.user)
+
+    context = {
+        'orders': user_orders_list,
+    }
+
+    return render(request, 'shop/my_orders.html', context=context)
 
 
