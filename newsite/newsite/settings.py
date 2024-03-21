@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 from django.urls import reverse_lazy
 import pytz
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -51,8 +52,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 
-    'requestdata.midlewares.request_data',
+    # 'requestdata.midlewares.request_data',
 ]
 
 ROOT_URLCONF = 'newsite.urls'
@@ -108,12 +110,23 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Etc/GMT-4'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_TZ = True
 
+USE_L10N = True
+
+LANGUAGES = (
+    ('hy', _('Armenian')),
+    ('ru', _('Russia')),
+    ('en', _('English')),
+)
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale/'
+]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
@@ -131,3 +144,7 @@ LOGOUT_REDIRECT_URL = reverse_lazy('myauth:login')
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / 'uploads'

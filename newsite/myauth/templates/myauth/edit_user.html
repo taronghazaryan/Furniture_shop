@@ -2,13 +2,17 @@
 
 {% block body %}
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <h1>Change Public Info</h1>
     <hr>
     {% csrf_token %}
     {{ form.as_p }}
+    {{ form_av.user_avatar }}<br>
 
-    <button type="submit">Save Changes</button>
+    <label for="id_images">Upload Images:</label>
+    <input type="file" name="images" id="id_images" multiple>
+
+    <button type="submit">Save Changes</button><br>
     <a href="{% url 'myauth:user_page' %}">Bact to Your Page</a>
 </form>
 

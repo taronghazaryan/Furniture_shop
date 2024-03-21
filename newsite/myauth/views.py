@@ -1,14 +1,24 @@
 from django.shortcuts import render, redirect, reverse
+
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm, PasswordResetForm
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponse, HttpRequest
 from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView, LogoutView
-from django.views.generic import TemplateView, CreateView, UpdateView
-from django.urls import reverse_lazy
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm, PasswordResetForm
-from .models import Profile
 from django.contrib.auth.decorators import login_required
-from .forms import EditUserForm
+
+from django.http import HttpResponse, HttpRequest
+
+from django.views.generic import TemplateView, CreateView, UpdateView
+
+from django.urls import reverse_lazy
+
+from .models import Profile, ProfileImages
+
+from .forms import EditUserForm, AddAvatarForm
+
+from django.utils.translation import gettext_lazy as _, ngettext
+
+import os
 
 # Create your views here.
 
@@ -18,14 +28,13 @@ def login_view(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(request, username=username, password=password)
-        if user.is_superuser:
-            login(request, user)
-            return redirect('/admin/')
-        elif user is not None:
+
+        if user is not None:
             login(request, user)
             return redirect('myauth:user_page')
         else:
-            error = 'Invalid login or password!'
+            # User.objects.create(username=username, password1=password, password2=password)
+            error = _('Invalid login or password!')
             return render(request, 'myauth/login.html', {'error': error})
     else:
         if request.user.is_authenticated:
@@ -47,6 +56,16 @@ def login_view(request):
 
 class AboutMeView(TemplateView):
     template_name = 'myauth/user_page.html'
+
+    def get_context_data(self, instance=User, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user = self.request.user  # Set the user from the request
+
+        data = ProfileImages.objects.filter(user=user)
+
+        context['data'] = data
+
+        return context
 
 
 class RegisterView(CreateView):
@@ -82,13 +101,29 @@ def logout_view(request: HttpRequest):
 def edit_user(request):
     if request.method == 'POST':
         form = EditUserForm(request.POST, instance=request.user)
-        if form.is_valid():
+        profile, created = Profile.objects.get_or_create(user=request.user)
+        form_av = AddAvatarForm(request.POST, request.FILES, instance=profile)
+        # form_img = AddMoreImagesForm(request.POST, request.FILES, instance=profile)
+        if form.is_valid() and form_av.is_valid():
+            form_av.save()
             form.save()
-            return redirect('myauth:user_page')
+
+        for image in request.FILES.getlist('images'):
+            # form_img = AddMoreImagesForm(request.POST, {'image': file}, instance=profile)
+            ProfileImages.objects.get_or_create(images=image, user=request.user)
+
+        # if form_img.is_valid():
+        #     images = form_img.save(commit=False)
+        #     images.user = profile  # Associate the image with the current user
+        #     images.save()
+        return redirect('myauth:user_page')
     else:
         form = EditUserForm(instance=request.user)
+        profile, created = Profile.objects.get_or_create(user=request.user)
+        form_av = AddAvatarForm(instance=profile)
+        # form_img = AddMoreImagesForm(instance=profile)
 
-    return render(request, 'myauth/edit_user.html', {'form': form})
+    return render(request, 'myauth/edit_user.html', {'form': form, 'form_av': form_av})
 
 
 def edit_password(request):
@@ -103,17 +138,17 @@ def edit_password(request):
     return render(request, 'myauth/edit_password.html', {'form': form})
 
 
-def reset_password(request):
-    if request.method == 'POST':
-        form = PasswordResetForm(None, request.POST)
-        if form.is_valid():
-            email = request.POST.get('email', '')
-            user = request.user
-
-    else:
-        form = PasswordResetForm(None)
-
-    return render(request, 'myauth/password_reset.html', {'form': form})
+# def reset_password(request):
+#     if request.method == 'POST':
+#         form = PasswordResetForm(None, request.POST)
+#         if form.is_valid():
+#             email = request.POST.get('email', '')
+#             user = request.user
+#
+#     else:
+#         form = PasswordResetForm(None)
+#
+#     return render(request, 'myauth/password_reset.html', {'form': form})
 
 # def password_reset(request):
 #     return render(request, 'myauth/password_reset.html')

@@ -220,7 +220,7 @@ class DeleteOrderView(UserPassesTestMixin, DeleteView):
         return self.request.user.is_superuser
 
     model = Order
-    success_url = reverse_lazy('shop:orders')
+    success_url = reverse_lazy('shop:user_orders')
 
     def form_valid(self, form):
         success_url = self.get_success_url()

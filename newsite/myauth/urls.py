@@ -7,11 +7,13 @@ from django.contrib.auth.views import (LogoutView,
                                        PasswordResetConfirmView,
                                        )
 
+
 app_name = 'myauth'
 
 urlpatterns = [
     path('login/', login_view, name='login'),
     path('user_page/', AboutMeView.as_view(), name='user_page'),
+    # path('images/', edit_password, name='password_change'),
     path('logout/', logout_view, name='logout'),
     path('register/', RegisterView.as_view(), name='register'),
     path('edit_user_info/', edit_user, name='edit_user'),
@@ -26,3 +28,4 @@ urlpatterns = [
         template_name='myauth/password_reset_confirm.html'),
          name='password_reset_confirm'),
 ]
+
