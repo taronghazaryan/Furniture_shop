@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'requestdata.apps.RequestdataConfig',
     'myauth.apps.MyauthConfig',
+
+    'rest_framework',
+    'myapi.apps.MyapiConfig'
 ]
 
 MIDDLEWARE = [
@@ -148,3 +151,8 @@ EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / 'uploads'
+
+REST_FRAMEWORK = {
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 10,
+}

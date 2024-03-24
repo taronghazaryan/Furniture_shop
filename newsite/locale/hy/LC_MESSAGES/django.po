@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 15:12+0000\n"
+"POT-Creation-Date: 2024-03-21 11:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: myauth/templates/myauth/user_page.html:57
+msgid "User"
+msgstr "Օգտատեր"
+
+#: myauth/templates/myauth/user_page.html:59
+msgid "Email"
+msgstr "Էլ․ փոստ"
+
+#: myauth/templates/myauth/user_page.html:62
+msgid "Create Product"
+msgstr "Ստեղծել ապրանք"
+
+#: myauth/templates/myauth/user_page.html:64
+msgid "Create order"
+msgstr "Ստեղծել պատվեր"
+
+#: myauth/templates/myauth/user_page.html:66
+msgid "All Orders"
+msgstr "Բոլոր պատվերները"
+
+#: myauth/templates/myauth/user_page.html:68
+msgid "My Orders"
+msgstr "Իմ պատվերները"
+
+#: myauth/templates/myauth/user_page.html:70
+msgid "Change Password"
+msgstr "Փոխել գաղտնաբառը"
+
+#: myauth/templates/myauth/user_page.html:71
+msgid "Edit Profile"
+msgstr "Խմբագրել հաշիվը"
+
+#: myauth/templates/myauth/user_page.html:72
+msgid "Logout"
+msgstr "Դուրս գալ"
+
 #: myauth/views.py:37
 msgid "Invalid login or password!"
 msgstr "Սխալ մուտքանուն կամ գաղտնաբառ"
+
+#: newsite/settings.py:122
+msgid "Armenian"
+msgstr "Հայերեն"
+
+#: newsite/settings.py:123
+msgid "Russia"
+msgstr "Ռուսերեն"
+
+#: newsite/settings.py:124
+msgid "English"
+msgstr "Անգլերեն"

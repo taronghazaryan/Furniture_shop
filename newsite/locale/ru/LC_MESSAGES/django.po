@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 15:12+0000\n"
+"POT-Creation-Date: 2024-03-21 11:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: myauth/templates/myauth/user_page.html:57
+msgid "User"
+msgstr "Ползователь"
+
+#: myauth/templates/myauth/user_page.html:59
+msgid "Email"
+msgstr "Эл. адресс"
+
+#: myauth/templates/myauth/user_page.html:62
+msgid "Create Product"
+msgstr "Создать продукть"
+
+#: myauth/templates/myauth/user_page.html:64
+msgid "Create order"
+msgstr "Создать заказ"
+
+#: myauth/templates/myauth/user_page.html:66
+msgid "All Orders"
+msgstr "Все закази"
+
+#: myauth/templates/myauth/user_page.html:68
+msgid "My Orders"
+msgstr "Мои закази"
+
+#: myauth/templates/myauth/user_page.html:70
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+#: myauth/templates/myauth/user_page.html:71
+msgid "Edit Profile"
+msgstr "Редактировать профил"
+
+#: myauth/templates/myauth/user_page.html:72
+msgid "Logout"
+msgstr "Выйти"
+
 #: myauth/views.py:37
 msgid "Invalid login or password!"
 msgstr "Неверный логин или пароль"
+
+#: newsite/settings.py:122
+msgid "Armenian"
+msgstr "Армянский"
+
+#: newsite/settings.py:123
+msgid "Russia"
+msgstr "Русский"
+
+#: newsite/settings.py:124
+msgid "English"
+msgstr "Алглийский"

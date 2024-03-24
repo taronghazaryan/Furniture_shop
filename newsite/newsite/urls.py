@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('shop/', include('shop.urls')),
     path('req/', include('requestdata.urls')),
+    # path('api/', include('myapi.urls')),
 
 ]
 

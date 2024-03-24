@@ -158,3 +158,4 @@ def edit_password(request):
 #     form_class = UserChangeForm
 #     template_name = 'myauth/edit_user.html'
 #     success_url = reverse_lazy('myauth:user_page')
+

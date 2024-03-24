@@ -1,7 +1,9 @@
 {% extends 'myauth/base.html' %}
 
+{% load i18n %}
+
 {% block title %}
-<title>{{ user.username }}'s Personal Page</title>
+<title>{{ user.username }}</title>
 {% endblock %}
 <style>
     div{
@@ -52,21 +54,41 @@
             <img class='nophoto' src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg">
         {% endif %}
     </div>
-    <h3>User: {{ user.username }}</h3>
+    <h3>{% translate 'User' %} : {{ user.username }}</h3>
     <h3>{{ user.first_name }} {{ user.last_name }}</h3>
-    <h3>Email: {{ user.email }}</h3>
+    <h3>{% translate 'Email' %} : {{ user.email }}</h3>
     <h3>{{ user.status }}</h3>
-    {% if user.is_superuser %}
-        <a href='/shop/product/add/'>Create Product</a>
-    {% endif %}
-    <a href='/shop/orders/create/'>Create order</a>
-    {% if user.is_superuser %}
-        <a href='/shop/orders/my/'>All Orders</a>
-    {% else  %}
-        <a href='/shop/orders/my/'>My Orders</a>
-    {% endif %}
-    <a href="{% url 'myauth:password_change' %}">Change Password</a>
-    <a href="{% url 'myauth:edit_user' %}">EDit Profile</a>
-    <a href="{% url 'myauth:logout' %}">Logout</a>
+
+
+    <ul class="nav nav-tabs">
+        {% if user.is_superuser %}
+            <li class="nav-item">
+                <a class="nav-link" href='/shop/product/add/'>{% translate 'Create Product' %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/shop/orders/my/'>{% translate 'All Orders' %}</a>
+            </li>
+        {% else  %}
+            <li class="nav-item">
+                <a href='/shop/orders/my/' class="nav-link">{% translate 'My Orders' %}</a>
+            </li>
+        {% endif %}
+
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/orders/create/">{% translate 'Create order' %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'myauth:password_change' %}">{% translate 'Change Password' %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'myauth:edit_user' %}">{% translate 'Edit Profile' %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'myauth:logout' %}">{% translate 'Logout' %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/hy/">Arm</a>
+      </li>
+    </ul>
 </div>
 {% endblock %}
