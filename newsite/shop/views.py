@@ -11,6 +11,12 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 # Create your views here.
 
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.filters import SearchFilter, OrderingFilter
+from django_filters.rest_framework import DjangoFilterBackend
+
+from .serializers import ProductSerializer, OrderSerializer
+
 
 def shop_index(request):
 
@@ -58,6 +64,34 @@ def shop_index(request):
 
 
 """All for Products"""
+
+
+class ProductViewSet(ModelViewSet):
+
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    filter_backends = [
+        DjangoFilterBackend,
+        SearchFilter,
+        OrderingFilter
+    ]
+    search_fields = [
+        "name",
+        "description"
+    ]
+
+    ordering_fields = [
+        'name',
+        'price',
+        'created_at'
+    ]
+
+    filterset_fields = [
+        'name',
+        'price',
+        'description',
+        'created_at'
+    ]
 
 
 class ListProductView(ListView):
@@ -126,6 +160,36 @@ class ArchivedProductView(UserPassesTestMixin, DeleteView):
 
 
 """All for Orders"""
+
+
+class OrderViewSet(ModelViewSet):
+
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
+
+    filter_backends = [
+        DjangoFilterBackend,
+        SearchFilter,
+        OrderingFilter
+    ]
+    search_fields = [
+        "delivery_address",
+        "promo_code"
+    ]
+
+    ordering_fields = [
+        'delivery_address',
+        'promo_code',
+        'created_at'
+    ]
+
+    filterset_fields = [
+        'delivery_address',
+        'promo_code',
+        'created_at',
+        'user'
+    ]
+
 
 # def orders(request):
 #

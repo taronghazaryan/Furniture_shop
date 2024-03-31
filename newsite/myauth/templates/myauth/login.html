@@ -1,5 +1,7 @@
 {% extends 'myauth/base.html' %}
 
+{% load i18n %}
+
 {% block title %}
     <title>Login</title>
 {% endblock %}
@@ -25,15 +27,15 @@
             </p>
         {% endif %}
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <label for="exampleInputEmail1" class="form-label">{% translate 'Username' %}</label>
             <input type="text" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text"></div>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <label for="exampleInputPassword1" class="form-label">{% translate 'Password' %}</label>
             <input type="password" class="form-control" name="password" id="exampleInputPassword1">
           </div>
-          <button type="submit" class="btn btn-primary">Login</button>
+          <button type="submit" class="btn btn-primary">{% translate 'Login' %}</button>
             <a href="{% url 'myauth:register' %}"><input type="button" class="btn btn-primary" value="Register Now"></a>
     </form>
 </div>
