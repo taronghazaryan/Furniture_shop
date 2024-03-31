@@ -18,6 +18,8 @@ from django.utils.translation import gettext_lazy as _
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
+CART_SESSION_ID = 'cart'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'myauth.apps.MyauthConfig',
 
     'rest_framework',
+    'django_filters',
     'myapi.apps.MyapiConfig'
 ]
 
@@ -159,4 +162,7 @@ MEDIA_ROOT = BASE_DIR / 'uploads'
 REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
+    "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend",
+    ]
 }
