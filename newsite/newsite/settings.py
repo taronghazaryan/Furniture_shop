@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admindocs',  # installed new module for admins documentation
 
     'shop.apps.ShopConfig',
     'requestdata.apps.RequestdataConfig',
@@ -47,7 +48,8 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'django_filters',
-    'myapi.apps.MyapiConfig'
+    'drf_spectacular',
+    'myapi.apps.MyapiConfig',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
     'django.middleware.locale.LocaleMiddleware',
+
+    'django.contrib.admindocs.middleware.XViewMiddleware',
 
     # 'requestdata.midlewares.request_data',
 ]
@@ -164,5 +169,14 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 10,
     "DEFAULT_FILTER_BACKENDS": [
         "django_filters.rest_framework.DjangoFilterBackend",
-    ]
+    ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'My Site Project Api',
+    'DESCRIPTION': 'My site with shop app and auth',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
+
