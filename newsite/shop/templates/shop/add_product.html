@@ -7,14 +7,18 @@
 {% block body %}
     <h2>Add New Product</h2>
     <div>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <label for="id_name">Product Name:</label>
             <input placeholder="Product Name" type="text" name="name" id="id_name" required><br>
             <label for="id_price" >Price:</label>
             <input placeholder="Price" type="number" name="price" id="id_price" required><br>
             <label for="description">Description:</label>
-            <textarea placeholder="Description Text" name="description" id="description" required></textarea>
+            <textarea placeholder="Description Text" name="description" id="description" required></textarea></br>
+            <label for="id_preview" >Preview:</label>
+            <input type="file" name="preview" id="id_preview" required><br>
+            <label for="id_images" >Images:</label>
+            <input type="file" name="images" id="id_images" multiple><br>
             <button type="submit">
                 Add Product
             </button>

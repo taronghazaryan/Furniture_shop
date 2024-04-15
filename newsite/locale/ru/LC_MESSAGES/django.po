@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-28 17:31+0000\n"
+"POT-Creation-Date: 2024-04-07 13:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,54 +36,60 @@ msgstr "Ппароль"
 msgid "Login"
 msgstr "Вход"
 
-#: myauth/templates/myauth/user_page.html:57
+#: myauth/templates/myauth/user_page.html:88
 msgid "User"
 msgstr "Ползователь"
 
-#: myauth/templates/myauth/user_page.html:59
+#: myauth/templates/myauth/user_page.html:99
 msgid "Email"
 msgstr "Эл. адресс"
 
-#: myauth/templates/myauth/user_page.html:66
+#: myauth/templates/myauth/user_page.html:124
 msgid "Create Product"
 msgstr "Создать продукть"
 
-#: myauth/templates/myauth/user_page.html:69
+#: myauth/templates/myauth/user_page.html:125
 msgid "All Orders"
 msgstr "Все закази"
 
-#: myauth/templates/myauth/user_page.html:73
+#: myauth/templates/myauth/user_page.html:127
 msgid "My Orders"
 msgstr "Мои закази"
 
-#: myauth/templates/myauth/user_page.html:78
+#: myauth/templates/myauth/user_page.html:129
+#, fuzzy
+#| msgid "Create Product"
+msgid "Products"
+msgstr "Создать продукть"
+
+#: myauth/templates/myauth/user_page.html:130
 msgid "Create order"
 msgstr "Создать заказ"
 
-#: myauth/templates/myauth/user_page.html:81
+#: myauth/templates/myauth/user_page.html:131
 msgid "Change Password"
 msgstr "Изменить пароль"
 
-#: myauth/templates/myauth/user_page.html:84
+#: myauth/templates/myauth/user_page.html:132
 msgid "Edit Profile"
 msgstr "Редактировать профил"
 
-#: myauth/templates/myauth/user_page.html:87
+#: myauth/templates/myauth/user_page.html:133
 msgid "Logout"
 msgstr "Выйти"
 
-#: myauth/views.py:37
+#: myauth/views.py:39
 msgid "Invalid login or password!"
 msgstr "Неверный логин или пароль"
 
-#: newsite/settings.py:129
+#: newsite/settings.py:137
 msgid "Armenian"
 msgstr "Армянский"
 
-#: newsite/settings.py:130
+#: newsite/settings.py:138
 msgid "Russia"
 msgstr "Русский"
 
-#: newsite/settings.py:131
+#: newsite/settings.py:139
 msgid "English"
 msgstr "Алглийский"

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Order
+from .models import Product, Order, Basket, ProductImage
 from django.contrib.auth.models import User
-from .forms import AddProduct, CreateOrderForm
+from .forms import AddProduct, CreateOrderForm, AddProductImage
 from django.http import HttpResponse, HttpRequest, Http404, HttpResponseRedirect, HttpResponseForbidden
 from django.views import View
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView
@@ -100,6 +100,18 @@ class ListProductView(ListView):
     queryset = Product.objects.filter(archived=False)
     context_object_name = 'products'
 
+    def get_context_data(self, *, instance=User, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        if self.request.user.is_authenticated:
+            user = self.request.user  # Set the user from the request
+
+            data = Basket.objects.filter(user=user)
+
+            context['data_2'] = data
+
+        return context
+
 
 # @login_required
 class CreateProductView(PermissionRequiredMixin, CreateView):
@@ -113,8 +125,18 @@ class CreateProductView(PermissionRequiredMixin, CreateView):
 
     model = Product  # for teg form
     template_name = 'shop/add_product.html'  # for import teg input in html
-    fields = 'name', 'price', 'description'
+    fields = 'name', 'price', 'description', 'preview'
     success_url = reverse_lazy('shop:products')
+
+    def form_valid(self, form):
+        # Save the product instance first
+        self.object = form.save()
+        images = self.request.FILES.getlist('images')
+        # Handle images upload
+        for image in images:
+            ProductImage.objects.create(image=image, product=self.object)
+
+        return super().form_valid(form)
 
 
 class ProductDetailsView(DetailView):
@@ -126,7 +148,7 @@ class ProductDetailsView(DetailView):
 
 class UpdateProductView(UserPassesTestMixin, UpdateView):
     def test_func(self):
-        return not self.request.user.is_superuser
+        return self.request.user.is_superuser
 
     model = Product
     fields = 'name', 'price', 'description'
@@ -304,5 +326,33 @@ def user_orders(request):
     }
 
     return render(request, 'shop/my_orders.html', context=context)
+
+
+@login_required
+def add_basket(request, product_pk):
+    current_page = request.META.get('HTTP_REFERER')
+    product = Product.objects.get(id=product_pk)
+    basket = Basket.objects.filter(user=request.user, product=product)
+
+    if not basket.exists():
+        basket = Basket.objects.create(user=request.user, product=product, quantity=1, total_price=product.price)
+        basket.save()
+
+        return HttpResponseRedirect(current_page)
+    basket = basket.first()
+    basket.quantity += 1
+    basket.total_price = basket.quantity * basket.product.price
+    basket.save()
+    return HttpResponseRedirect(current_page)
+
+
+@login_required
+def delete_basket(request, product_id):
+    current_page = request.META.get('HTTP_REFERER')
+    product = Product.objects.get(id=product_id)
+    basket = Basket.objects.get(user=request.user, product=product)
+    basket.delete()
+    return HttpResponseRedirect(current_page)
+
 
 

@@ -5,90 +5,159 @@
 {% block title %}
 <title>{{ user.username }}</title>
 {% endblock %}
-<style>
-    div{
-    border: 2px solid red;
-    }
-</style>
+
 
 {% block body %}
 <style>
-    div{
-    border: 2px solid grey;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: justify;
+        }
+
+        .information{
+            display: flex;
+            justify-content:
+            space-between;
+        }
+
+        .information h2{
+
+            display: inline;
+        }
+
+        .information h1{
+            text-align: left;
+            display: inline;
+        }
+
+        .information h2 a{
+            text-decoration: None;
+            text-align: right;
+        }
 
 
-    .avatar{
-    height: 200px;
-    width: 200px;
-    border: 3px solid yellow;
-    }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .profile-info {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
 
-    .all{
-    width:100px;
-    height:100px;
-    border: 3px solid black;
-    }
 
-    .nophoto{
-    width:100px;
-    height:100px;
-    border: 3px solid red;
-    }
+        .profile-info h2 {
+            margin-top: 0;
+        }
+        .profile-info p {
+            margin: 5px 0;
+        }
+        .profile-details {
+            margin-bottom: 20px;
+        }
 
-    
+        .profile-images {
+            margin-bottom: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .profile-images img {
+            border-radius: 10%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile-details p {
+            margin: 5px 0;
+        }
+
+        footer nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+
 </style>
-
-<div>
-    {% if user.profile.user_avatar %}
-        <img class="avatar" src="{{ user.profile.user_avatar.url}}" alt="{{ user.avatar.name }}">
-    {% else %}
-        <img class="avatar" src="https://cdn.icon-icons.com/icons2/3065/PNG/512/profile_user_account_icon_190938.png">
-    {% endif %}
-    <div class="images">
-        {% if data %}
-            {% for image in data %}
-                <img class="all" src="{{ MEDIA_URL }}/media/{{ image.images }}" alt="User image">
-            {% endfor %}
-        {% else %}
-            <img class='nophoto' src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg">
-        {% endif %}
+<header>
+    <div class="information">
+        <h1>Market.MY</h1>
+        <h2>{{ user.username }}<span> | </span><a href="{% url 'myauth:logout' %}">{% translate 'Logout' %}</a></h2>
     </div>
-    <h3>{% translate 'User' %} : {{ user.username }}</h3>
-    <h3>{{ user.first_name }} {{ user.last_name }}</h3>
-    <h3>{% translate 'Email' %} : {{ user.email }}</h3>
-    <h3>{{ user.status }}</h3>
+</header>
 
+    <div class="container">
+        <div class="profile-info">
+            {% if user.profile.user_avatar %}
+                <img  src="{{ user.profile.user_avatar.url}}" alt="{{ user.avatar.name }}">
+            {% else %}
+                <img  src="https://cdn.icon-icons.com/icons2/3065/PNG/512/profile_user_account_icon_190938.png">
+            {% endif %}
+            <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+            <p>@{{ user.username }}</p>
+            <p>{% translate 'Email' %} : {{ user.email }}</p>
+            <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Date of Birth: January 1, 1990</p>
+            <p>Joined: January 1, 2020</p>
+            <p>{{ user.is_active }}</p>
+        </div>
 
-    <ul class="nav nav-tabs">
+        <div class="profile-images">
+            {% if data %}
+                {% for image in data %}
+                    <img onerror="this.style.display = 'none'" class="all" src="{{ MEDIA_URL }}/media/{{ image.images }}" alt="User image">
+                {% endfor %}
+            {% else %}
+                <img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg">
+            {% endif %}
+        </div>
+
+        <div class="profile-details">
+            {% include 'shop/basket.html' %}
+        </div>
+    </div>
+
+<footer>
+    <nav>
         {% if user.is_superuser %}
-            <li class="nav-item">
-                <a class="nav-link" href='/shop/product/add/'>{% translate 'Create Product' %}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href='/shop/orders/'>{% translate 'All Orders' %}</a>
-            </li>
-        {% else  %}
-            <li class="nav-item">
-                <a href='/shop/orders/' class="nav-link">{% translate 'My Orders' %}</a>
-            </li>
+            <a href='/shop/product/add/'>{% translate 'Create Product' %}</a>
+            <a href='/shop/orders/'>{% translate 'All Orders' %}</a>
+        {% else %}
+            <a href='/shop/orders/' >{% translate 'My Orders' %}</a>
         {% endif %}
+        <a href="/shop/products/">{% translate 'Products' %}</a>
+        <a href="/shop/orders/create/">{% translate 'Create order' %}</a>
+        <a href="{% url 'myauth:password_change' %}">{% translate 'Change Password' %}</a>
+        <a href="{% url 'myauth:edit_user' %}">{% translate 'Edit Profile' %}</a>
 
-      <li class="nav-item">
-        <a class="nav-link" href="/shop/orders/create/">{% translate 'Create order' %}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'myauth:password_change' %}">{% translate 'Change Password' %}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'myauth:edit_user' %}">{% translate 'Edit Profile' %}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'myauth:logout' %}">{% translate 'Logout' %}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/hy/">Arm</a>
-      </li>
-    </ul>
-</div>
+    </nav>
+</footer>
 {% endblock %}

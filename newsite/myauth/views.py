@@ -18,6 +18,8 @@ from .forms import EditUserForm, AddAvatarForm
 
 from django.utils.translation import gettext_lazy as _, ngettext
 
+from shop.models import Basket
+
 import os
 
 # Create your views here.
@@ -41,7 +43,6 @@ def login_view(request):
             return redirect('myauth:user_page')
         return render(request, 'myauth/login.html')
 
-
 # User information page
 # def user_page(request, pk):
 #
@@ -62,8 +63,14 @@ class AboutMeView(TemplateView):
         user = self.request.user  # Set the user from the request
 
         data = ProfileImages.objects.filter(user=user)
+        data_2 = Basket.objects.filter(user=user)
 
+        for item in data_2:
+            item.total_price = item.product.price * item.quantity
+            item.save()
         context['data'] = data
+        context['data_2'] = data_2
+
 
         return context
 

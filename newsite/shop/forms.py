@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product, Order
+from .models import Product, Order, ProductImage
 from django.core import validators
 
 # long version for create Product
@@ -22,7 +22,7 @@ class AddProduct(forms.ModelForm):
     class Meta:
 
         model = Product
-        fields = ['name', 'price', 'description']
+        fields = ['name', 'price', 'description', 'preview']
 
 # long version to Create Order
 # class CreateOrderForm(forms.Form):
@@ -43,3 +43,10 @@ class CreateOrderForm(forms.ModelForm):
         model = Order
         fields = ['delivery_address', 'promo_code', 'products']
 
+
+class AddProductImage(forms.ModelForm):
+
+    class Meta:
+
+        model = ProductImage
+        fields = ['image',]

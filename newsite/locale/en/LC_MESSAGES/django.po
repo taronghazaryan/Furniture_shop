@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-28 17:31+0000\n"
+"POT-Creation-Date: 2024-04-07 13:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,54 +30,58 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:57
+#: myauth/templates/myauth/user_page.html:88
 msgid "User"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:59
+#: myauth/templates/myauth/user_page.html:99
 msgid "Email"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:66
+#: myauth/templates/myauth/user_page.html:124
 msgid "Create Product"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:69
+#: myauth/templates/myauth/user_page.html:125
 msgid "All Orders"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:73
+#: myauth/templates/myauth/user_page.html:127
 msgid "My Orders"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:78
+#: myauth/templates/myauth/user_page.html:129
+msgid "Products"
+msgstr ""
+
+#: myauth/templates/myauth/user_page.html:130
 msgid "Create order"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:81
+#: myauth/templates/myauth/user_page.html:131
 msgid "Change Password"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:84
+#: myauth/templates/myauth/user_page.html:132
 msgid "Edit Profile"
 msgstr ""
 
-#: myauth/templates/myauth/user_page.html:87
+#: myauth/templates/myauth/user_page.html:133
 msgid "Logout"
 msgstr ""
 
-#: myauth/views.py:37
+#: myauth/views.py:39
 msgid "Invalid login or password!"
 msgstr ""
 
-#: newsite/settings.py:129
+#: newsite/settings.py:137
 msgid "Armenian"
 msgstr ""
 
-#: newsite/settings.py:130
+#: newsite/settings.py:138
 msgid "Russia"
 msgstr ""
 
-#: newsite/settings.py:131
+#: newsite/settings.py:139
 msgid "English"
 msgstr ""

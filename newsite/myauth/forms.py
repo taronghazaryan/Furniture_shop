@@ -18,5 +18,7 @@ class AddAvatarForm(forms.ModelForm):
         fields = 'user_avatar',
 
 
+
+
 # TODO: The created_at now returns the UTC time, need to differentiate with the user's local timezone and show correct time (created_at + 4 hours +GMT4)
 # TODO: Check if the email is already in use while registration

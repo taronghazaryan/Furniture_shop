@@ -5,27 +5,143 @@
 {% endblock%}
 
 {% block body %}
-    <ul>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: justify;
+        }
+
+        header a{
+            text-decoration: None;
+            color: #fff;
+        }
+
+        header h2{
+            text-align: right;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .product img {
+            border-radius: 5%;
+            width: 150px;
+            height: 150px;
+        }
+        .product h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:  #787675;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #c1bdbc;
+        }
+
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .information{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .information h2{
+            display: inline;
+        }
+
+        .information h1{
+            display: inline;
+        }
+
+        .information h2 a{
+            text-decoration: None;
+        }
+    </style>
+
+<header>
+    <div class="information">
+        <h1>Market.MY</h1>
+        <h2><a href="/accounts/user_page">{{ user.username }}</a></h2>
+    </div>
+</header>
+
+<div class="container">
+
         {% for item in products %}
-        <h3>Name: <a href="{% url 'shop:product_details' pk=item.pk %}">{{ item.name }}</a></h3>
-            <li>Archived:
-                {% if item.archived %}
-                    yes
-                {% else %}
-                    no
-                {% endif %}
-            </li>
-        <hr>
+         <div class="product">
+             {% if item.preview %}
+                <img  src="{{ item.preview.url }}" alt="{{ user.avatar.name }}">
+             {% endif %}
+             <p>{{ item.description }}</p>
+            <h3>Name: <a href="{% url 'shop:product_details' pk=item.pk %}">{{ item.name }}</a></h3>
+            <a href="{% url 'shop:add_basket' product_pk=item.pk %}" class="button">Add to basket</a>
+         </div>
         {% endfor %}
 
-    </ul>
 
-<article>
-    <footer>
-        <a href="{% url 'shop:orders' %}">Orders</a><br>
-        <a href="{% url 'shop:add_product' %}">Add product</a><br>
-        <a href="{% url 'shop:create_order' %}">Create order</a><br>
-    </footer>
-</article>
+    <div class="product">
+        {% include 'shop/basket.html' %}
+    </div>
+
+    <nav>
+        <a href="{% url 'shop:orders' %}">Orders</a>
+        <a href="{% url 'shop:add_product' %}">Add product</a>
+        <a href="{% url 'shop:create_order' %}">Create order</a>
+    </nav>
+
+</div>
+
 
 {% endblock %}
+
+
+
+
+

@@ -12,7 +12,9 @@ from .views import (shop_index,
                     DeleteOrderView,
                     user_orders,
                     OrderViewSet,
-                    ProductViewSet)
+                    ProductViewSet,
+                    add_basket,
+                    delete_basket)
 
 from rest_framework.routers import DefaultRouter
 
@@ -36,4 +38,6 @@ urlpatterns = [
     path('orders/<int:pk>/update', UpdateOrderView.as_view(), name='order_update'),
     path('orders/<int:pk>/delete', DeleteOrderView.as_view(), name='order_delete'),
     path('orders/', user_orders, name='orders'),
+    path('add_basket/<int:product_pk>/', add_basket, name='add_basket'),
+    path('delete_basket/<int:product_id>/', delete_basket, name='delete_basket'),
 ]
