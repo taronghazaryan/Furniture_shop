@@ -19,6 +19,7 @@ from .forms import EditUserForm, AddAvatarForm
 from django.utils.translation import gettext_lazy as _, ngettext
 
 from shop.models import Basket
+from blog.models import Blog
 
 from django.db import transaction
 
@@ -66,13 +67,14 @@ class AboutMeView(TemplateView):
 
         data = ProfileImages.objects.filter(user=user)
         data_2 = Basket.objects.filter(user=user)
+        data_3 = Blog.objects.select_related('user').filter(user=user)
 
         for item in data_2:
             item.total_price = item.product.price * item.quantity
             item.save()
         context['data'] = data
         context['data_2'] = data_2
-
+        context['data_3'] = data_3
 
         return context
 
