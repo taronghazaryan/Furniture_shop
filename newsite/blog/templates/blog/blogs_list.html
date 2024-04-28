@@ -1,0 +1,183 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    <title>Blog</title>
+{% endblock%}
+
+{% block body %}
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:  #3e8a1a ;
+            color: #fff;
+            padding: 10px 0;
+            text-align: justify;
+        }
+
+        header a{
+            text-decoration: None;
+            color: #fff;
+        }
+
+        header h2{
+            text-align: right;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .author {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+
+        }
+        .author .profile {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+        }
+        .author h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:  #787675;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #c1bdbc;
+        }
+
+
+        nav {
+            background-color:  #3e8a1a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .information{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .information h2{
+            display: inline;
+        }
+
+        .information h1{
+            display: inline;
+        }
+
+        .inlin {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inlin img{
+            display: inline;
+        }
+
+        .inlin h3{
+            display: inline ;
+        }
+
+
+        .information h2 a{
+            text-decoration: None;
+        }
+
+        .author .blog{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+    </style>
+
+<header>
+    <div class="information">
+        <h1>Market.MY | Blog</h1>
+        <h2><a href="/accounts/user_page">{{ user.username }}</a></h2>
+    </div>
+</header>
+
+<div class="container">
+        <div class="author">
+            {% include 'blog/add_blog.html'%}
+        </div>
+        {% for item in blogs %}
+             <div class="author">
+                 <div class="inlin">
+                     {% if item.user.profile.user_avatar %}
+                        <img  class="profile" src="{{ item.user.profile.user_avatar.url }}" alt="{{ user.avatar.name }}">
+                     {% endif %}
+                     <h3>@{{ item.user.username }}</h3>
+                     <h3>__{{ item.name }}</h3>
+
+
+
+                 </div>
+                 {% if item.image %}
+                    <img class="blog" src="{{ item.image.url }}">
+                 {% endif %}
+                 <p>{% lorem 3 p random %} </p>
+
+                 <h4>{{ item.created_at }}</h4>
+
+
+             </div>
+        {% endfor %}
+
+
+
+
+    <nav>
+        <a href="{% url 'shop:orders' %}">Orders</a>
+        <a href="{% url 'shop:add_product' %}">Add product</a>
+        <a href="{% url 'shop:create_order' %}">Create order</a>
+    </nav>
+
+</div>
+
+
+{% endblock %}
+
+
+
+
+

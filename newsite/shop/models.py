@@ -1,7 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from time import sleep
+from django.core.exceptions import ValidationError
 
+from django.core.files.uploadedfile import InMemoryUploadedFile
 
 # Create your models here.
 def upload_product_preview(instance: 'Product', filename: str) -> str:
@@ -26,9 +28,14 @@ def upload_product_image(instance: 'ProductImage', filename: str) -> str:
     return f'products/{instance.product.name}/images/{filename}'
 
 
+def validator_image(image: 'ProductImage'):
+    if not image.name.lower().endswith('jpg'):
+        raise ValidationError('bad format image')
+
+
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    image = models.ImageField(null=True, blank=True, upload_to=upload_product_image)
+    image = models.ImageField(null=True, blank=True, validators=[validator_image], upload_to=upload_product_image)
 
 
 class Order(models.Model):

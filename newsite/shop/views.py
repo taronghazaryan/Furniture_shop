@@ -17,6 +17,10 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 from .serializers import ProductSerializer, OrderSerializer
 
+from django.core.exceptions import ValidationError
+
+from django.db import transaction
+
 
 def shop_index(request):
 
@@ -114,6 +118,7 @@ class ListProductView(ListView):
 
 
 # @login_required
+
 class CreateProductView(PermissionRequiredMixin, CreateView):
     permission_required = ['shop.add_product',]
     """are a user superuser ,returned True or False"""
@@ -134,7 +139,11 @@ class CreateProductView(PermissionRequiredMixin, CreateView):
         images = self.request.FILES.getlist('images')
         # Handle images upload
         for image in images:
-            ProductImage.objects.create(image=image, product=self.object)
+            """ ???? """
+            if image.name.lower().endswith(('jpeg', 'jpg', 'png')):
+                ProductImage.objects.create(image=image, product=self.object)
+            else:
+                raise ValidationError('no no no')
 
         return super().form_valid(form)
 
@@ -254,7 +263,7 @@ class CreateOrderView(LoginRequiredMixin, CreateView):
     model = Order
     fields = 'delivery_address', 'promo_code', 'products'
     template_name = 'shop/create_order.html'
-    success_url = reverse_lazy('shop:user_orders')
+    success_url = reverse_lazy('shop:orders')
 
     def form_valid(self, form):
         form.instance.user = self.request.user  # Set the user from the request

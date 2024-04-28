@@ -25,6 +25,7 @@ urlpatterns = [
     path('shop/', include('shop.urls')),
     path('req/', include('requestdata.urls')),
     # path('api/', include('myapi.urls')),
+    path('blog/', include('blog.urls')),
 
 ]
 

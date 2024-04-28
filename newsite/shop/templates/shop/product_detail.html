@@ -5,19 +5,81 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Product {{ product.name }}</h1>
-    <li>Price: $ {{ product.price }}</li>
-    <li>Description: {{ product.description }}</li>
-    <li>Created at: {{ product.created_at }}</li>
-    <li>Archived:
-         {% if product.archived %}
-              yes
-         {% else %}
-              no
-         {% endif %}
-    </li>
-    <div>
-        <a href="{% url 'shop:product_update' pk=product.pk %}">Update</a>
-        <a href="{% url 'shop:product_archived' pk=product.pk %}">Archived</a>
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #444;
+        }
+        /* Product Detail Styles */
+        .product-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+
+        .product-info {
+            flex: 2;
+        }
+        .product-info p {
+            margin: 10px 0;
+        }
+        .product-info strong {
+            font-weight: bold;
+            color: #555;
+        }
+        .product-image img {
+            max-width: 400px;
+            height: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+    <div class="container">
+        <h1>{{ product.name }}</h1>
+        <div class="product-detail">
+            <div class="product-image">
+                <img src='{{ product.preview.url }}' alt="Product Image">
+            </div>
+            <div class="product-info">
+                <p><strong>Price:</strong> ${{ product.price }}</p>
+                <p><strong>Description:</strong>{{ product.description }}</p>
+                <p><strong>Date:</strong>{{ product.created_at }}</p>
+
+                <!-- Add more details here -->
+            </div>
+        </div>
+        <p><a href="{% url 'shop:products' %}">Back to Products</a></p>
+        <p><a href="{% url 'shop:product_update' pk=product.pk %}">Update</a></p>
+        <p><a href="{% url 'shop:product_archived' pk=product.pk %}">Archived</a></p>
     </div>
 {% endblock %}

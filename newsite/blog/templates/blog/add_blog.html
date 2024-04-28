@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            margin: 0 auto;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color:  #90d800 ;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color:  #6e935c ;
+        }
+
+        .custom-file-input {
+            display: none;
+        }
+        .custom-file-label {
+            background-color:  #90d800 ;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .custom-file-label:hover {
+            background-color:  #6e935c ;
+        }
+    </style>
+</head>
+<body>
+    <form  action="{% url 'blog:add_blog'%}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="title">Blog Title:</label>
+        <input type="text" id="title" name="name" >
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="blog_text" ></textarea>
+
+        <label for="blog_img">Image:</label>
+        <input type="file" id="blog_img" name="image" class="custom-file-label">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

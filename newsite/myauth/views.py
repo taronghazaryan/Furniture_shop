@@ -20,6 +20,8 @@ from django.utils.translation import gettext_lazy as _, ngettext
 
 from shop.models import Basket
 
+from django.db import transaction
+
 import os
 
 # Create your views here.
@@ -104,6 +106,7 @@ def logout_view(request: HttpRequest):
     return redirect(reverse("myauth:login"))
 
 
+@transaction.atomic()
 @login_required
 def edit_user(request):
     if request.method == 'POST':

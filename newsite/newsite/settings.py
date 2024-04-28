@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'requestdata.apps.RequestdataConfig',
     'myauth.apps.MyauthConfig',
+    'blog.apps.BlogConfig',
 
     'rest_framework',
     'django_filters',
@@ -64,6 +65,8 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
 
     'django.contrib.admindocs.middleware.XViewMiddleware',
+
+    # 'shop.middlewares.image_validation',
 
     # 'requestdata.midlewares.request_data',
 ]
