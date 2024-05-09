@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Product, Order, Basket, ProductImage
 from django.contrib.auth.models import User
-from .forms import AddProduct, CreateOrderForm, AddProductImage
+# from .forms import AddProduct, CreateOrderForm, AddProductImage
 from django.http import HttpResponse, HttpRequest, Http404, HttpResponseRedirect, HttpResponseForbidden
 from django.views import View
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView

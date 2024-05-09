@@ -1,0 +1,46 @@
+services:
+  web-app:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    container_name: web-app
+
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+
+    command:
+      - "python"
+      - "/app/newsite/manage.py"
+      - "runserver"
+      - "0.0.0.0:8080"
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
+    depends_on:
+      - database
+
+  database:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: taronghazaryan
+      POSTGRES_PASSWORD: Taronjan.1997
+
+
+  grafana:
+    image: grafana/grafana:9.2.15
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+    ports:
+      - "3000:3000"
+
+  loki:
+    image: grafana/loki:2.8.0
+    ports:
+      - "3100:3100"
+

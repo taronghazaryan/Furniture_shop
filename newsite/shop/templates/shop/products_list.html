@@ -113,18 +113,18 @@
 </header>
 
 <div class="container">
-
-        {% for item in products %}
-         <div class="product">
-             {% if item.preview %}
-                <img  src="{{ item.preview.url }}" alt="{{ user.avatar.name }}">
-             {% endif %}
-             <p>{{ item.description }}</p>
-            <h3>Name: <a href="{% url 'shop:product_details' pk=item.pk %}">{{ item.name }}</a></h3>
-            <a href="{% url 'shop:add_basket' product_pk=item.pk %}" class="button">Add to basket</a>
-         </div>
-        {% endfor %}
-
+        {% if products %}
+            {% for item in products %}
+             <div class="product">
+                 {% if item.preview %}
+                    <img  src="{{ item.preview.url }}" alt="{{ user.avatar.name }}">
+                 {% endif %}
+                 <p>{{ item.description }}</p>
+                <h3>Name: <a href="{% url 'shop:product_details' pk=item.pk %}">{{ item.name }}</a></h3>
+                <a href="{% url 'shop:add_basket' product_pk=item.pk %}" class="button">Add to basket</a>
+             </div>
+            {% endfor %}
+        {% endif %}
 
     <div class="product">
         {% include 'shop/basket.html' %}

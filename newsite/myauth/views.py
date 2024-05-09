@@ -23,6 +23,7 @@ from blog.models import Blog
 
 from django.db import transaction
 
+from django.contrib.auth.mixins import LoginRequiredMixin
 import os
 
 # Create your views here.
@@ -58,15 +59,15 @@ def login_view(request):
 #     return render(request, 'myauth/user_page.html', context=context)
 
 
-class AboutMeView(TemplateView):
+class AboutMeView(LoginRequiredMixin, TemplateView):
     template_name = 'myauth/user_page.html'
 
     def get_context_data(self, instance=User, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.request.user  # Set the user from the request
 
-        data = ProfileImages.objects.filter(user=user)
-        data_2 = Basket.objects.filter(user=user)
+        data = ProfileImages.objects.select_related('user').filter(user=user)
+        data_2 = Basket.objects.select_related('user').filter(user=user)
         data_3 = Blog.objects.select_related('user').filter(user=user)
 
         for item in data_2:
