@@ -18,6 +18,12 @@ from .forms import EditUserForm, AddAvatarForm
 
 from django.utils.translation import gettext_lazy as _, ngettext
 
+from shop.models import Basket
+from blog.models import Blog
+
+from django.db import transaction
+
+from django.contrib.auth.mixins import LoginRequiredMixin
 import os
 
 # Create your views here.
@@ -41,7 +47,6 @@ def login_view(request):
             return redirect('myauth:user_page')
         return render(request, 'myauth/login.html')
 
-
 # User information page
 # def user_page(request, pk):
 #
@@ -54,16 +59,23 @@ def login_view(request):
 #     return render(request, 'myauth/user_page.html', context=context)
 
 
-class AboutMeView(TemplateView):
+class AboutMeView(LoginRequiredMixin, TemplateView):
     template_name = 'myauth/user_page.html'
 
     def get_context_data(self, instance=User, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.request.user  # Set the user from the request
 
-        data = ProfileImages.objects.filter(user=user)
+        data = ProfileImages.objects.select_related('user').filter(user=user)
+        data_2 = Basket.objects.select_related('user').filter(user=user)
+        data_3 = Blog.objects.select_related('user').filter(user=user)
 
+        for item in data_2:
+            item.total_price = item.product.price * item.quantity
+            item.save()
         context['data'] = data
+        context['data_2'] = data_2
+        context['data_3'] = data_3
 
         return context
 
@@ -97,6 +109,7 @@ def logout_view(request: HttpRequest):
     return redirect(reverse("myauth:login"))
 
 
+@transaction.atomic()
 @login_required
 def edit_user(request):
     if request.method == 'POST':

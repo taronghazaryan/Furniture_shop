@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker rm -f myapp;
+docker rmi myshop;
+#docker build -t myshop /home/ubuntu/taron_app/Furniture_shop
+docker build -t myshop /home/taronghazaryan/PycharmProjects/furniture_shop_project/;
+docker run -d -p 0.0.0.0:8080:8000 --name=myapp myshop;
+sleep 15
+curl localhost:8080

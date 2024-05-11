@@ -15,7 +15,7 @@
         {% endfor %}
     </ul>
     <div>
-        <a href="{% url 'shop:user_orders'%}">Orders</a>
+        <a href="{% url 'shop:orders'%}">Orders</a>
         <a href="{% url 'shop:order_update' pk=order.pk%}">Update</a>
         <a href="{% url 'shop:order_delete' pk=order.pk%}">Delete</a>
 

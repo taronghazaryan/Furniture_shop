@@ -1,9 +1,11 @@
 from django.contrib import admin
-from .models import Product, Order
+from .models import Product, Order, Basket
 from django.db.models import QuerySet
 from django.http import HttpRequest
 from .admin_mixins import ExportAsMixinCsv
 # Register your models here.
+
+admin.site.register(Basket)
 
 
 class OrderInLine(admin.TabularInline):

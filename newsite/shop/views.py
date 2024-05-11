@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Order
+from .models import Product, Order, Basket, ProductImage
 from django.contrib.auth.models import User
-from .forms import AddProduct, CreateOrderForm
+# from .forms import AddProduct, CreateOrderForm, AddProductImage
 from django.http import HttpResponse, HttpRequest, Http404, HttpResponseRedirect, HttpResponseForbidden
 from django.views import View
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView
@@ -10,6 +10,16 @@ from datetime import datetime
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 # Create your views here.
+
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.filters import SearchFilter, OrderingFilter
+from django_filters.rest_framework import DjangoFilterBackend
+
+from .serializers import ProductSerializer, OrderSerializer
+
+from django.core.exceptions import ValidationError
+
+from django.db import transaction
 
 
 def shop_index(request):
@@ -60,14 +70,55 @@ def shop_index(request):
 """All for Products"""
 
 
+class ProductViewSet(ModelViewSet):
+
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    filter_backends = [
+        DjangoFilterBackend,
+        SearchFilter,
+        OrderingFilter
+    ]
+    search_fields = [
+        "name",
+        "description"
+    ]
+
+    ordering_fields = [
+        'name',
+        'price',
+        'created_at'
+    ]
+
+    filterset_fields = [
+        'name',
+        'price',
+        'description',
+        'created_at'
+    ]
+
+
 class ListProductView(ListView):
     model = Product
     template_name = 'shop/products_list.html'
     queryset = Product.objects.filter(archived=False)
     context_object_name = 'products'
 
+    def get_context_data(self, *, instance=User, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        if self.request.user.is_authenticated:
+            user = self.request.user  # Set the user from the request
+
+            data = Basket.objects.filter(user=user)
+
+            context['data_2'] = data
+
+        return context
+
 
 # @login_required
+
 class CreateProductView(PermissionRequiredMixin, CreateView):
     permission_required = ['shop.add_product',]
     """are a user superuser ,returned True or False"""
@@ -79,8 +130,22 @@ class CreateProductView(PermissionRequiredMixin, CreateView):
 
     model = Product  # for teg form
     template_name = 'shop/add_product.html'  # for import teg input in html
-    fields = 'name', 'price', 'description'
+    fields = 'name', 'price', 'description', 'preview'
     success_url = reverse_lazy('shop:products')
+
+    def form_valid(self, form):
+        # Save the product instance first
+        self.object = form.save()
+        images = self.request.FILES.getlist('images')
+        # Handle images upload
+        for image in images:
+            """ ???? """
+            if image.name.lower().endswith(('jpeg', 'jpg', 'png')):
+                ProductImage.objects.create(image=image, product=self.object)
+            else:
+                raise ValidationError('no no no')
+
+        return super().form_valid(form)
 
 
 class ProductDetailsView(DetailView):
@@ -92,7 +157,7 @@ class ProductDetailsView(DetailView):
 
 class UpdateProductView(UserPassesTestMixin, UpdateView):
     def test_func(self):
-        return not self.request.user.is_superuser
+        return self.request.user.is_superuser
 
     model = Product
     fields = 'name', 'price', 'description'
@@ -126,6 +191,36 @@ class ArchivedProductView(UserPassesTestMixin, DeleteView):
 
 
 """All for Orders"""
+
+
+class OrderViewSet(ModelViewSet):
+
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
+
+    filter_backends = [
+        DjangoFilterBackend,
+        SearchFilter,
+        OrderingFilter
+    ]
+    search_fields = [
+        "delivery_address",
+        "promo_code"
+    ]
+
+    ordering_fields = [
+        'delivery_address',
+        'promo_code',
+        'created_at'
+    ]
+
+    filterset_fields = [
+        'delivery_address',
+        'promo_code',
+        'created_at',
+        'user'
+    ]
+
 
 # def orders(request):
 #
@@ -168,7 +263,7 @@ class CreateOrderView(LoginRequiredMixin, CreateView):
     model = Order
     fields = 'delivery_address', 'promo_code', 'products'
     template_name = 'shop/create_order.html'
-    success_url = reverse_lazy('shop:user_orders')
+    success_url = reverse_lazy('shop:orders')
 
     def form_valid(self, form):
         form.instance.user = self.request.user  # Set the user from the request
@@ -240,5 +335,33 @@ def user_orders(request):
     }
 
     return render(request, 'shop/my_orders.html', context=context)
+
+
+@login_required
+def add_basket(request, product_pk):
+    current_page = request.META.get('HTTP_REFERER')
+    product = Product.objects.get(id=product_pk)
+    basket = Basket.objects.filter(user=request.user, product=product)
+
+    if not basket.exists():
+        basket = Basket.objects.create(user=request.user, product=product, quantity=1, total_price=product.price)
+        basket.save()
+
+        return HttpResponseRedirect(current_page)
+    basket = basket.first()
+    basket.quantity += 1
+    basket.total_price = basket.quantity * basket.product.price
+    basket.save()
+    return HttpResponseRedirect(current_page)
+
+
+@login_required
+def delete_basket(request, product_id):
+    current_page = request.META.get('HTTP_REFERER')
+    product = Product.objects.get(id=product_id)
+    basket = Basket.objects.get(user=request.user, product=product)
+    basket.delete()
+    return HttpResponseRedirect(current_page)
+
 
 

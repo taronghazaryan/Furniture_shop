@@ -1,0 +1,1548 @@
+2024-04-30 08:32:37,669 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:32:53,897 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/newsite/settings.py changed, reloading.
+2024-04-30 08:32:54,071 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:33:09,276 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/newsite/settings.py changed, reloading.
+2024-04-30 08:33:09,561 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:33:21,285 [WARNING] in django.request: Not Found: /
+2024-04-30 08:33:21,495 [WARNING] in django.request: Not Found: /favicon.ico
+2024-04-30 08:33:28,523 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:33:28,539 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:33:30,972 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:33:30,975 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:33:37,343 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:33:37,345 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:33:37,584 [WARNING] in django.request: Not Found: /favicon.ico
+2024-04-30 08:36:25,184 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:36:31,805 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:36:35,683 [WARNING] in django.request: Not Found: /en/shop/products/
+2024-04-30 08:36:43,679 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:36:43,685 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:38:06,721 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/newsite/settings.py changed, reloading.
+2024-04-30 08:38:06,995 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:38:10,845 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:38:10,853 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:38:11,048 [WARNING] in django.request: Not Found: /favicon.ico
+2024-04-30 08:38:21,459 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:38:26,255 [WARNING] in django.request: Not Found: /en/shop/products/
+2024-04-30 08:38:26,280 [WARNING] in django.request: Not Found: /favicon.ico
+2024-04-30 08:38:33,231 [WARNING] in django.request: Not Found: /shop/product2.jpg
+2024-04-30 08:38:33,235 [WARNING] in django.request: Not Found: /shop/product1.jpg
+2024-04-30 08:38:38,026 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:38:38,028 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:44:58,014 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:45:02,971 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:45:02,979 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:45:03,021 [WARNING] in django.request: Not Found: /favicon.ico
+2024-04-30 08:45:04,145 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:45:04,146 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:45:05,126 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:45:05,127 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:45:06,335 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:45:06,338 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:45:06,573 [WARNING] in django.request: Not Found: /favicon.ico
+2024-04-30 08:45:07,461 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:45:07,466 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:45:07,713 [WARNING] in django.request: Not Found: /favicon.ico
+2024-04-30 08:45:16,526 [ERROR] in django.request: Internal Server Error: /en/accounts/user_page/
+Traceback (most recent call last):
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/myauth/views.py", line 68, in get_context_data
+    data = ProfileImages.objects.filter(user=user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fb44cc96710>>.
+2024-04-30 08:45:59,862 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:46:05,004 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:46:47,247 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/myauth/views.py changed, reloading.
+2024-04-30 08:46:47,517 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:48:33,681 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/myauth/views.py changed, reloading.
+2024-04-30 08:48:33,991 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:48:51,445 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:50:35,390 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/newsite/urls.py changed, reloading.
+2024-04-30 08:50:35,717 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:50:55,237 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/newsite/urls.py changed, reloading.
+2024-04-30 08:50:55,505 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:51:04,806 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:05,605 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:05,769 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:05,937 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:06,131 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:06,314 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:06,511 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:07,324 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:07,527 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:07,726 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:07,932 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:08,086 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:08,305 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:08,467 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:08,649 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:08,818 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:09,003 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:09,198 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:09,412 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:09,606 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:51:21,125 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:51:21,131 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:51:58,961 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/newsite/settings.py changed, reloading.
+2024-04-30 08:52:24,220 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:52:28,497 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-04-30 08:52:28,507 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-04-30 08:53:26,793 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:56:00,045 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/myauth/views.py changed, reloading.
+2024-04-30 08:56:00,367 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:56:12,596 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-04-30 08:59:40,445 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-30 08:59:46,371 [WARNING] in django.request: Not Found: /
+2024-05-02 12:51:20,988 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-02 13:12:07,468 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-02 13:12:37,205 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-02 13:12:43,769 [WARNING] in django.request: Not Found: /
+2024-05-02 13:12:50,581 [WARNING] in django.request: Not Found: /accounts/
+2024-05-02 13:12:54,950 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-02 13:14:14,412 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-02 13:14:58,657 [DEBUG] in PIL.Image: Importing BlpImagePlugin
+2024-05-02 13:14:58,659 [DEBUG] in PIL.Image: Importing BmpImagePlugin
+2024-05-02 13:14:58,659 [DEBUG] in PIL.Image: Importing BufrStubImagePlugin
+2024-05-02 13:14:58,660 [DEBUG] in PIL.Image: Importing CurImagePlugin
+2024-05-02 13:14:58,661 [DEBUG] in PIL.Image: Importing DcxImagePlugin
+2024-05-02 13:14:58,663 [DEBUG] in PIL.Image: Importing DdsImagePlugin
+2024-05-02 13:14:58,667 [DEBUG] in PIL.Image: Importing EpsImagePlugin
+2024-05-02 13:14:58,668 [DEBUG] in PIL.Image: Importing FitsImagePlugin
+2024-05-02 13:14:58,668 [DEBUG] in PIL.Image: Importing FliImagePlugin
+2024-05-02 13:14:58,669 [DEBUG] in PIL.Image: Importing FpxImagePlugin
+2024-05-02 13:14:58,669 [DEBUG] in PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-05-02 13:14:58,669 [DEBUG] in PIL.Image: Importing FtexImagePlugin
+2024-05-02 13:14:58,670 [DEBUG] in PIL.Image: Importing GbrImagePlugin
+2024-05-02 13:14:58,670 [DEBUG] in PIL.Image: Importing GifImagePlugin
+2024-05-02 13:14:58,670 [DEBUG] in PIL.Image: Importing GribStubImagePlugin
+2024-05-02 13:14:58,670 [DEBUG] in PIL.Image: Importing Hdf5StubImagePlugin
+2024-05-02 13:14:58,670 [DEBUG] in PIL.Image: Importing IcnsImagePlugin
+2024-05-02 13:14:58,671 [DEBUG] in PIL.Image: Importing IcoImagePlugin
+2024-05-02 13:14:58,672 [DEBUG] in PIL.Image: Importing ImImagePlugin
+2024-05-02 13:14:58,673 [DEBUG] in PIL.Image: Importing ImtImagePlugin
+2024-05-02 13:14:58,673 [DEBUG] in PIL.Image: Importing IptcImagePlugin
+2024-05-02 13:14:58,674 [DEBUG] in PIL.Image: Importing JpegImagePlugin
+2024-05-02 13:14:58,674 [DEBUG] in PIL.Image: Importing Jpeg2KImagePlugin
+2024-05-02 13:14:58,674 [DEBUG] in PIL.Image: Importing McIdasImagePlugin
+2024-05-02 13:14:58,674 [DEBUG] in PIL.Image: Importing MicImagePlugin
+2024-05-02 13:14:58,675 [DEBUG] in PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-05-02 13:14:58,675 [DEBUG] in PIL.Image: Importing MpegImagePlugin
+2024-05-02 13:14:58,675 [DEBUG] in PIL.Image: Importing MpoImagePlugin
+2024-05-02 13:14:58,678 [DEBUG] in PIL.Image: Importing MspImagePlugin
+2024-05-02 13:14:58,678 [DEBUG] in PIL.Image: Importing PalmImagePlugin
+2024-05-02 13:14:58,679 [DEBUG] in PIL.Image: Importing PcdImagePlugin
+2024-05-02 13:14:58,679 [DEBUG] in PIL.Image: Importing PcxImagePlugin
+2024-05-02 13:14:58,679 [DEBUG] in PIL.Image: Importing PdfImagePlugin
+2024-05-02 13:14:58,683 [DEBUG] in PIL.Image: Importing PixarImagePlugin
+2024-05-02 13:14:58,684 [DEBUG] in PIL.Image: Importing PngImagePlugin
+2024-05-02 13:14:58,684 [DEBUG] in PIL.Image: Importing PpmImagePlugin
+2024-05-02 13:14:58,684 [DEBUG] in PIL.Image: Importing PsdImagePlugin
+2024-05-02 13:14:58,684 [DEBUG] in PIL.Image: Importing QoiImagePlugin
+2024-05-02 13:14:58,685 [DEBUG] in PIL.Image: Importing SgiImagePlugin
+2024-05-02 13:14:58,685 [DEBUG] in PIL.Image: Importing SpiderImagePlugin
+2024-05-02 13:14:58,685 [DEBUG] in PIL.Image: Importing SunImagePlugin
+2024-05-02 13:14:58,686 [DEBUG] in PIL.Image: Importing TgaImagePlugin
+2024-05-02 13:14:58,686 [DEBUG] in PIL.Image: Importing TiffImagePlugin
+2024-05-02 13:14:58,686 [DEBUG] in PIL.Image: Importing WebPImagePlugin
+2024-05-02 13:14:58,690 [DEBUG] in PIL.Image: Importing WmfImagePlugin
+2024-05-02 13:14:58,690 [DEBUG] in PIL.Image: Importing XbmImagePlugin
+2024-05-02 13:14:58,691 [DEBUG] in PIL.Image: Importing XpmImagePlugin
+2024-05-02 13:14:58,692 [DEBUG] in PIL.Image: Importing XVThumbImagePlugin
+2024-05-02 18:32:37,542 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-02 19:54:12,341 [INFO] in django.utils.autoreload: /app/newsite/settings.py changed, reloading.
+2024-05-02 19:54:12,799 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-02 19:55:12,296 [INFO] in django.utils.autoreload: /app/newsite/settings.py changed, reloading.
+2024-05-02 19:55:12,663 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-02 20:01:25,502 [INFO] in django.utils.autoreload: /app/newsite/settings.py changed, reloading.
+2024-05-02 20:01:25,896 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 09:34:52,546 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 09:36:28,874 [INFO] in django.utils.autoreload: /app/newsite/newsite/settings.py changed, reloading.
+2024-05-03 09:36:29,232 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 09:54:26,251 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 09:57:02,807 [INFO] in django.utils.autoreload: /app/newsite/newsite/settings.py changed, reloading.
+2024-05-03 09:57:03,253 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 09:57:03,319 [INFO] in django.utils.autoreload: /app/newsite/newsite/settings.py changed, reloading.
+2024-05-03 09:57:03,827 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 09:57:09,937 [WARNING] in django.request: Not Found: /
+2024-05-03 09:57:09,972 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-03 09:57:39,139 [ERROR] in django.request: Internal Server Error: /en/accounts/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "auth_user" does not exist
+LINE 1: ...user"."is_active", "auth_user"."date_joined" FROM "auth_user...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/newsite/myauth/views.py", line 36, in login_view
+    user = authenticate(request, username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 73, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "auth_user" does not exist
+LINE 1: ...user"."is_active", "auth_user"."date_joined" FROM "auth_user...
+                                                             ^
+
+2024-05-03 10:02:10,268 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 10:02:20,447 [WARNING] in django.request: Not Found: /
+2024-05-03 10:05:39,687 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 10:07:43,557 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-03 10:07:52,978 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-03 10:09:41,886 [DEBUG] in PIL.Image: Importing BlpImagePlugin
+2024-05-03 10:09:41,888 [DEBUG] in PIL.Image: Importing BmpImagePlugin
+2024-05-03 10:09:41,888 [DEBUG] in PIL.Image: Importing BufrStubImagePlugin
+2024-05-03 10:09:41,888 [DEBUG] in PIL.Image: Importing CurImagePlugin
+2024-05-03 10:09:41,889 [DEBUG] in PIL.Image: Importing DcxImagePlugin
+2024-05-03 10:09:41,889 [DEBUG] in PIL.Image: Importing DdsImagePlugin
+2024-05-03 10:09:41,893 [DEBUG] in PIL.Image: Importing EpsImagePlugin
+2024-05-03 10:09:41,894 [DEBUG] in PIL.Image: Importing FitsImagePlugin
+2024-05-03 10:09:41,894 [DEBUG] in PIL.Image: Importing FliImagePlugin
+2024-05-03 10:09:41,894 [DEBUG] in PIL.Image: Importing FpxImagePlugin
+2024-05-03 10:09:41,895 [DEBUG] in PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-05-03 10:09:41,895 [DEBUG] in PIL.Image: Importing FtexImagePlugin
+2024-05-03 10:09:41,895 [DEBUG] in PIL.Image: Importing GbrImagePlugin
+2024-05-03 10:09:41,896 [DEBUG] in PIL.Image: Importing GifImagePlugin
+2024-05-03 10:09:41,896 [DEBUG] in PIL.Image: Importing GribStubImagePlugin
+2024-05-03 10:09:41,897 [DEBUG] in PIL.Image: Importing Hdf5StubImagePlugin
+2024-05-03 10:09:41,897 [DEBUG] in PIL.Image: Importing IcnsImagePlugin
+2024-05-03 10:09:41,899 [DEBUG] in PIL.Image: Importing IcoImagePlugin
+2024-05-03 10:09:41,899 [DEBUG] in PIL.Image: Importing ImImagePlugin
+2024-05-03 10:09:41,900 [DEBUG] in PIL.Image: Importing ImtImagePlugin
+2024-05-03 10:09:41,901 [DEBUG] in PIL.Image: Importing IptcImagePlugin
+2024-05-03 10:09:41,901 [DEBUG] in PIL.Image: Importing JpegImagePlugin
+2024-05-03 10:09:41,901 [DEBUG] in PIL.Image: Importing Jpeg2KImagePlugin
+2024-05-03 10:09:41,901 [DEBUG] in PIL.Image: Importing McIdasImagePlugin
+2024-05-03 10:09:41,902 [DEBUG] in PIL.Image: Importing MicImagePlugin
+2024-05-03 10:09:41,902 [DEBUG] in PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-05-03 10:09:41,902 [DEBUG] in PIL.Image: Importing MpegImagePlugin
+2024-05-03 10:09:41,903 [DEBUG] in PIL.Image: Importing MpoImagePlugin
+2024-05-03 10:09:41,906 [DEBUG] in PIL.Image: Importing MspImagePlugin
+2024-05-03 10:09:41,907 [DEBUG] in PIL.Image: Importing PalmImagePlugin
+2024-05-03 10:09:41,909 [DEBUG] in PIL.Image: Importing PcdImagePlugin
+2024-05-03 10:09:41,909 [DEBUG] in PIL.Image: Importing PcxImagePlugin
+2024-05-03 10:09:41,909 [DEBUG] in PIL.Image: Importing PdfImagePlugin
+2024-05-03 10:09:41,916 [DEBUG] in PIL.Image: Importing PixarImagePlugin
+2024-05-03 10:09:41,916 [DEBUG] in PIL.Image: Importing PngImagePlugin
+2024-05-03 10:09:41,917 [DEBUG] in PIL.Image: Importing PpmImagePlugin
+2024-05-03 10:09:41,917 [DEBUG] in PIL.Image: Importing PsdImagePlugin
+2024-05-03 10:09:41,917 [DEBUG] in PIL.Image: Importing QoiImagePlugin
+2024-05-03 10:09:41,918 [DEBUG] in PIL.Image: Importing SgiImagePlugin
+2024-05-03 10:09:41,918 [DEBUG] in PIL.Image: Importing SpiderImagePlugin
+2024-05-03 10:09:41,919 [DEBUG] in PIL.Image: Importing SunImagePlugin
+2024-05-03 10:09:41,920 [DEBUG] in PIL.Image: Importing TgaImagePlugin
+2024-05-03 10:09:41,920 [DEBUG] in PIL.Image: Importing TiffImagePlugin
+2024-05-03 10:09:41,921 [DEBUG] in PIL.Image: Importing WebPImagePlugin
+2024-05-03 10:09:41,924 [DEBUG] in PIL.Image: Importing WmfImagePlugin
+2024-05-03 10:09:41,925 [DEBUG] in PIL.Image: Importing XbmImagePlugin
+2024-05-03 10:09:41,926 [DEBUG] in PIL.Image: Importing XpmImagePlugin
+2024-05-03 10:09:41,927 [DEBUG] in PIL.Image: Importing XVThumbImagePlugin
+2024-05-03 10:09:57,555 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-03 10:10:39,420 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-03 10:11:01,563 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-03 10:11:12,777 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-03 10:11:16,816 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-04 19:05:01,932 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-04 19:05:09,160 [WARNING] in django.request: Not Found: /
+2024-05-04 19:09:33,180 [DEBUG] in PIL.PngImagePlugin: STREAM b'IHDR' 16 13
+2024-05-04 19:09:33,181 [DEBUG] in PIL.PngImagePlugin: STREAM b'sBIT' 41 4
+2024-05-04 19:09:33,181 [DEBUG] in PIL.PngImagePlugin: b'sBIT' 41 4 (unknown)
+2024-05-04 19:09:33,181 [DEBUG] in PIL.PngImagePlugin: STREAM b'tEXt' 57 25
+2024-05-04 19:09:33,181 [DEBUG] in PIL.PngImagePlugin: STREAM b'tEXt' 94 38
+2024-05-04 19:09:33,181 [DEBUG] in PIL.PngImagePlugin: STREAM b'IDAT' 144 8192
+2024-05-04 19:09:33,181 [DEBUG] in PIL.Image: Importing BlpImagePlugin
+2024-05-04 19:09:33,182 [DEBUG] in PIL.Image: Importing BmpImagePlugin
+2024-05-04 19:09:33,182 [DEBUG] in PIL.Image: Importing BufrStubImagePlugin
+2024-05-04 19:09:33,183 [DEBUG] in PIL.Image: Importing CurImagePlugin
+2024-05-04 19:09:33,183 [DEBUG] in PIL.Image: Importing DcxImagePlugin
+2024-05-04 19:09:33,184 [DEBUG] in PIL.Image: Importing DdsImagePlugin
+2024-05-04 19:09:33,187 [DEBUG] in PIL.Image: Importing EpsImagePlugin
+2024-05-04 19:09:33,188 [DEBUG] in PIL.Image: Importing FitsImagePlugin
+2024-05-04 19:09:33,188 [DEBUG] in PIL.Image: Importing FliImagePlugin
+2024-05-04 19:09:33,188 [DEBUG] in PIL.Image: Importing FpxImagePlugin
+2024-05-04 19:09:33,188 [DEBUG] in PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-05-04 19:09:33,188 [DEBUG] in PIL.Image: Importing FtexImagePlugin
+2024-05-04 19:09:33,189 [DEBUG] in PIL.Image: Importing GbrImagePlugin
+2024-05-04 19:09:33,189 [DEBUG] in PIL.Image: Importing GifImagePlugin
+2024-05-04 19:09:33,189 [DEBUG] in PIL.Image: Importing GribStubImagePlugin
+2024-05-04 19:09:33,189 [DEBUG] in PIL.Image: Importing Hdf5StubImagePlugin
+2024-05-04 19:09:33,190 [DEBUG] in PIL.Image: Importing IcnsImagePlugin
+2024-05-04 19:09:33,191 [DEBUG] in PIL.Image: Importing IcoImagePlugin
+2024-05-04 19:09:33,191 [DEBUG] in PIL.Image: Importing ImImagePlugin
+2024-05-04 19:09:33,192 [DEBUG] in PIL.Image: Importing ImtImagePlugin
+2024-05-04 19:09:33,192 [DEBUG] in PIL.Image: Importing IptcImagePlugin
+2024-05-04 19:09:33,192 [DEBUG] in PIL.Image: Importing JpegImagePlugin
+2024-05-04 19:09:33,192 [DEBUG] in PIL.Image: Importing Jpeg2KImagePlugin
+2024-05-04 19:09:33,192 [DEBUG] in PIL.Image: Importing McIdasImagePlugin
+2024-05-04 19:09:33,193 [DEBUG] in PIL.Image: Importing MicImagePlugin
+2024-05-04 19:09:33,193 [DEBUG] in PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-05-04 19:09:33,193 [DEBUG] in PIL.Image: Importing MpegImagePlugin
+2024-05-04 19:09:33,194 [DEBUG] in PIL.Image: Importing MpoImagePlugin
+2024-05-04 19:09:33,197 [DEBUG] in PIL.Image: Importing MspImagePlugin
+2024-05-04 19:09:33,197 [DEBUG] in PIL.Image: Importing PalmImagePlugin
+2024-05-04 19:09:33,198 [DEBUG] in PIL.Image: Importing PcdImagePlugin
+2024-05-04 19:09:33,198 [DEBUG] in PIL.Image: Importing PcxImagePlugin
+2024-05-04 19:09:33,198 [DEBUG] in PIL.Image: Importing PdfImagePlugin
+2024-05-04 19:09:33,203 [DEBUG] in PIL.Image: Importing PixarImagePlugin
+2024-05-04 19:09:33,203 [DEBUG] in PIL.Image: Importing PngImagePlugin
+2024-05-04 19:09:33,203 [DEBUG] in PIL.Image: Importing PpmImagePlugin
+2024-05-04 19:09:33,204 [DEBUG] in PIL.Image: Importing PsdImagePlugin
+2024-05-04 19:09:33,204 [DEBUG] in PIL.Image: Importing QoiImagePlugin
+2024-05-04 19:09:33,204 [DEBUG] in PIL.Image: Importing SgiImagePlugin
+2024-05-04 19:09:33,205 [DEBUG] in PIL.Image: Importing SpiderImagePlugin
+2024-05-04 19:09:33,205 [DEBUG] in PIL.Image: Importing SunImagePlugin
+2024-05-04 19:09:33,205 [DEBUG] in PIL.Image: Importing TgaImagePlugin
+2024-05-04 19:09:33,206 [DEBUG] in PIL.Image: Importing TiffImagePlugin
+2024-05-04 19:09:33,206 [DEBUG] in PIL.Image: Importing WebPImagePlugin
+2024-05-04 19:09:33,206 [DEBUG] in PIL.Image: Importing WmfImagePlugin
+2024-05-04 19:09:33,207 [DEBUG] in PIL.Image: Importing XbmImagePlugin
+2024-05-04 19:09:33,208 [DEBUG] in PIL.Image: Importing XpmImagePlugin
+2024-05-04 19:09:33,208 [DEBUG] in PIL.Image: Importing XVThumbImagePlugin
+2024-05-04 19:10:39,708 [INFO] in django.utils.autoreload: /app/newsite/myauth/views.py changed, reloading.
+2024-05-04 19:10:40,091 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-04 19:10:44,088 [ERROR] in django.request: Internal Server Error: /en/accounts/user_page/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/defaulttags.py", line 325, in render
+    if match:
+       ^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 414, in __bool__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1549, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 279, in get_select
+    related_klass_infos = self.get_related_selections(select, select_mask)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1367, in get_related_selections
+    raise FieldError(
+django.core.exceptions.FieldError: Invalid field name(s) given in select_related: 'profile'. Choices are: user
+2024-05-04 19:11:24,364 [INFO] in django.utils.autoreload: /app/newsite/myauth/views.py changed, reloading.
+2024-05-04 19:11:24,750 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-04 19:12:10,117 [INFO] in django.utils.autoreload: /app/newsite/newsite/settings.py changed, reloading.
+2024-05-04 19:31:27,315 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-04 19:31:52,485 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-04 19:32:32,018 [INFO] in django.utils.autoreload: /app/newsite/newsite/settings.py changed, reloading.
+2024-05-04 19:32:32,392 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-04 19:32:36,578 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-04 19:35:45,180 [INFO] in django.utils.autoreload: /app/newsite/newsite/settings.py changed, reloading.
+2024-05-04 19:35:45,524 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-04 19:35:52,175 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-04 19:38:06,827 [ERROR] in django.security.DisallowedHost: Invalid HTTP_HOST header: '172.21.0.1:8080'. You may need to add '172.21.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.21.0.1:8080'. You may need to add '172.21.0.1' to ALLOWED_HOSTS.
+2024-05-04 19:38:06,856 [WARNING] in django.request: Bad Request: /shop/products/
+2024-05-04 19:38:06,916 [ERROR] in django.security.DisallowedHost: Invalid HTTP_HOST header: '172.21.0.1:8080'. You may need to add '172.21.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.21.0.1:8080'. You may need to add '172.21.0.1' to ALLOWED_HOSTS.
+2024-05-04 19:38:06,934 [WARNING] in django.request: Bad Request: /favicon.ico
+2024-05-08 11:10:51,836 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-08 11:10:52,049 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-08 11:10:53,001 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:12:25,842 [INFO] in django.utils.autoreload: /home/taronghazaryan/PycharmProjects/furniture_shop_project/newsite/newsite/settings.py changed, reloading.
+2024-05-08 11:12:26,199 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-08 11:13:59,996 [WARNING] in django.request: Not Found: /
+2024-05-08 11:14:00,001 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-08 11:14:00,075 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-08 11:14:00,539 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:14:00,731 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:14:01,038 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:14:01,275 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:14:01,447 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:14:01,652 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:15:00,215 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:16:04,003 [WARNING] in django.request: Not Found: /__debug__/
+2024-05-08 11:16:04,294 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:16:17,003 [WARNING] in django.request: Not Found: /__debug__/ render_panel/
+2024-05-08 11:16:17,289 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:16:27,696 [ERROR] in django.request: Internal Server Error: /__debug__/render_panel/
+Traceback (most recent call last):
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'store_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/debug_toolbar/decorators.py", line 18, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/debug_toolbar/decorators.py", line 30, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/debug_toolbar/views.py", line 13, in render_panel
+    toolbar = DebugToolbar.fetch(request.GET["store_id"])
+                                 ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/taronghazaryan/PycharmProjects/furniture_shop_project/venv/lib/python3.11/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'store_id'
+2024-05-08 11:16:27,893 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:16:28,130 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:16:37,349 [WARNING] in django.request: Not Found: /__debug__/render_panel/1/
+2024-05-08 11:16:37,720 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:17:00,376 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:12,732 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-08 11:20:34,065 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-08 11:20:34,871 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:35,076 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:35,280 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:35,587 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:39,582 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:39,624 [WARNING] in django.request: Not Found: /media/uploads/blog/taronghazaryan/ghkh/images/jasmine_thompson.jpg
+2024-05-08 11:20:39,887 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:40,194 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:40,501 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:40,605 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-08 11:20:40,808 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:41,069 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:41,347 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:41,595 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:41,825 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:42,065 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:42,284 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:42,625 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:42,907 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:43,157 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:43,435 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:43,713 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:43,986 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:44,234 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:44,509 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:44,745 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:45,032 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:45,306 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:45,525 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:45,786 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:46,042 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:46,263 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:46,529 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:46,744 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:47,006 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:47,202 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:47,465 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:47,706 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:47,930 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:48,154 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:48,393 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:48,714 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:48,985 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:49,232 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:49,565 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:49,770 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:49,983 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:50,225 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:50,502 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:50,743 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:50,982 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:51,222 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:51,504 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:51,747 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:52,037 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:52,035 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-05-08 11:20:52,068 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-05-08 11:20:52,353 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:52,583 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:52,864 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:53,109 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:53,394 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:53,623 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:53,903 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:54,209 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:54,478 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:54,684 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:54,943 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:55,159 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:55,428 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:55,721 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:55,992 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:56,223 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:56,511 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:56,791 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:57,111 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:57,383 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:57,783 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:58,303 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:58,645 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:59,133 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:20:59,474 [WARNING] in django.request: Not Found: /media/products/product_a/preview/15341.750.webp
+2024-05-08 11:20:59,486 [WARNING] in django.request: Not Found: /media/products/product_None/preview/15341.750.webp
+2024-05-08 11:20:59,645 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:00,054 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:00,365 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:00,668 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:00,987 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:01,341 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:01,622 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:01,999 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:02,340 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:02,564 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:02,822 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:03,228 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:03,665 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:03,944 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:04,251 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:04,663 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:05,079 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:05,377 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:05,620 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:05,889 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:06,299 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:06,742 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:07,015 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:07,322 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:07,630 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-08 11:21:34,253 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 10:11:09,246 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 10:11:16,184 [WARNING] in django.request: Not Found: /
+2024-05-09 10:11:16,189 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 10:11:16,605 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 10:11:16,707 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 10:11:16,812 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 10:11:17,015 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 10:11:17,120 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 10:11:54,972 [ERROR] in django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "shop_product" does not exist
+LINE 1: ...roduct"."archived", "shop_product"."preview" FROM "shop_prod...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/views.py", line 39, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/templates.py", line 76, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/defaulttags.py", line 198, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/__init__.py", line 629, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "shop_product" does not exist
+LINE 1: ...roduct"."archived", "shop_product"."preview" FROM "shop_prod...
+                                                             ^
+
+2024-05-09 10:11:56,182 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 10:11:56,401 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 16:46:28,808 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 16:46:55,785 [WARNING] in django.request: Not Found: /
+2024-05-09 16:46:55,794 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 16:47:00,154 [DEBUG] in urllib3.util.retry: Incremented Retry for (url='/api/4507220471578704/envelope/'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-05-09 16:47:00,155 [WARNING] in urllib3.connectionpool: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x725d4c2de810>: Failed to resolve 'o4507220465876992.ingest.de.sentry.io' ([Errno -5] No address associated with hostname)")': /api/4507220471578704/envelope/
+2024-05-09 16:47:00,155 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (2): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 16:47:04,341 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 16:47:04,412 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 16:47:04,482 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 16:47:04,650 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 16:47:04,720 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 16:56:58,704 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 17:03:17,562 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 19:13:46,248 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 19:19:08,957 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 19:19:09,183 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 19:19:09,589 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:19:44,927 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 19:19:53,598 [WARNING] in django.request: Not Found: /
+2024-05-09 19:19:53,602 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 19:19:54,010 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:19:54,079 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:19:54,215 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:19:54,317 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:19:54,419 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:20:02,497 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:20:02,506 [WARNING] in django.request: Not Found: /shop/product2.jpg
+2024-05-09 19:20:02,516 [WARNING] in django.request: Not Found: /shop/product1.jpg
+2024-05-09 19:20:02,609 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:20:02,710 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:20:02,813 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:20:08,058 [ERROR] in django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "shop_product" does not exist
+LINE 1: ...roduct"."archived", "shop_product"."preview" FROM "shop_prod...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/views.py", line 39, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/templates.py", line 76, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/defaulttags.py", line 198, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/__init__.py", line 629, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "shop_product" does not exist
+LINE 1: ...roduct"."archived", "shop_product"."preview" FROM "shop_prod...
+                                                             ^
+
+2024-05-09 19:20:08,139 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:20:08,237 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:19,873 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 19:27:23,898 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 19:27:23,994 [WARNING] in django.request: Not Found: /shop/product1.jpg
+2024-05-09 19:27:24,002 [WARNING] in django.request: Not Found: /shop/product2.jpg
+2024-05-09 19:27:28,257 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:28,302 [ERROR] in django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "shop_product" does not exist
+LINE 1: ...roduct"."archived", "shop_product"."preview" FROM "shop_prod...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/views.py", line 39, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/templates.py", line 76, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/defaulttags.py", line 325, in render
+    if match:
+       ^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 414, in __bool__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/__init__.py", line 629, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "shop_product" does not exist
+LINE 1: ...roduct"."archived", "shop_product"."preview" FROM "shop_prod...
+                                                             ^
+
+2024-05-09 19:27:28,359 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:28,461 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:28,563 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:28,665 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:28,768 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:28,870 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:28,975 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:27:29,075 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:31:09,178 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 19:31:09,865 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:31:40,083 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 19:41:08,577 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 19:43:35,532 [ERROR] in django.security.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8080'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/middleware.py", line 169, in __call__
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8080'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-05-09 19:43:35,588 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 19:43:35,604 [WARNING] in django.request: Bad Request: /
+2024-05-09 19:43:35,648 [ERROR] in django.security.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8080'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/middleware.py", line 169, in __call__
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8080'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-05-09 19:43:35,662 [WARNING] in django.request: Bad Request: /favicon.ico
+2024-05-09 19:43:36,143 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:36,242 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:36,345 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:36,446 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:52,325 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:52,420 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:52,522 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:52,624 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:52,727 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:43:52,829 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:44:06,438 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-09 19:44:06,478 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:44:06,559 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:44:06,651 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:44:15,572 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:44:22,020 [DEBUG] in PIL.Image: Importing BlpImagePlugin
+2024-05-09 19:44:22,021 [DEBUG] in PIL.Image: Importing BmpImagePlugin
+2024-05-09 19:44:22,021 [DEBUG] in PIL.Image: Importing BufrStubImagePlugin
+2024-05-09 19:44:22,022 [DEBUG] in PIL.Image: Importing CurImagePlugin
+2024-05-09 19:44:22,022 [DEBUG] in PIL.Image: Importing DcxImagePlugin
+2024-05-09 19:44:22,023 [DEBUG] in PIL.Image: Importing DdsImagePlugin
+2024-05-09 19:44:22,025 [DEBUG] in PIL.Image: Importing EpsImagePlugin
+2024-05-09 19:44:22,026 [DEBUG] in PIL.Image: Importing FitsImagePlugin
+2024-05-09 19:44:22,026 [DEBUG] in PIL.Image: Importing FliImagePlugin
+2024-05-09 19:44:22,027 [DEBUG] in PIL.Image: Importing FpxImagePlugin
+2024-05-09 19:44:22,027 [DEBUG] in PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-05-09 19:44:22,027 [DEBUG] in PIL.Image: Importing FtexImagePlugin
+2024-05-09 19:44:22,027 [DEBUG] in PIL.Image: Importing GbrImagePlugin
+2024-05-09 19:44:22,028 [DEBUG] in PIL.Image: Importing GifImagePlugin
+2024-05-09 19:44:22,028 [DEBUG] in PIL.Image: Importing GribStubImagePlugin
+2024-05-09 19:44:22,028 [DEBUG] in PIL.Image: Importing Hdf5StubImagePlugin
+2024-05-09 19:44:22,028 [DEBUG] in PIL.Image: Importing IcnsImagePlugin
+2024-05-09 19:44:22,029 [DEBUG] in PIL.Image: Importing IcoImagePlugin
+2024-05-09 19:44:22,030 [DEBUG] in PIL.Image: Importing ImImagePlugin
+2024-05-09 19:44:22,030 [DEBUG] in PIL.Image: Importing ImtImagePlugin
+2024-05-09 19:44:22,031 [DEBUG] in PIL.Image: Importing IptcImagePlugin
+2024-05-09 19:44:22,031 [DEBUG] in PIL.Image: Importing JpegImagePlugin
+2024-05-09 19:44:22,031 [DEBUG] in PIL.Image: Importing Jpeg2KImagePlugin
+2024-05-09 19:44:22,031 [DEBUG] in PIL.Image: Importing McIdasImagePlugin
+2024-05-09 19:44:22,031 [DEBUG] in PIL.Image: Importing MicImagePlugin
+2024-05-09 19:44:22,032 [DEBUG] in PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-05-09 19:44:22,032 [DEBUG] in PIL.Image: Importing MpegImagePlugin
+2024-05-09 19:44:22,032 [DEBUG] in PIL.Image: Importing MpoImagePlugin
+2024-05-09 19:44:22,035 [DEBUG] in PIL.Image: Importing MspImagePlugin
+2024-05-09 19:44:22,035 [DEBUG] in PIL.Image: Importing PalmImagePlugin
+2024-05-09 19:44:22,036 [DEBUG] in PIL.Image: Importing PcdImagePlugin
+2024-05-09 19:44:22,036 [DEBUG] in PIL.Image: Importing PcxImagePlugin
+2024-05-09 19:44:22,036 [DEBUG] in PIL.Image: Importing PdfImagePlugin
+2024-05-09 19:44:22,043 [DEBUG] in PIL.Image: Importing PixarImagePlugin
+2024-05-09 19:44:22,043 [DEBUG] in PIL.Image: Importing PngImagePlugin
+2024-05-09 19:44:22,043 [DEBUG] in PIL.Image: Importing PpmImagePlugin
+2024-05-09 19:44:22,043 [DEBUG] in PIL.Image: Importing PsdImagePlugin
+2024-05-09 19:44:22,044 [DEBUG] in PIL.Image: Importing QoiImagePlugin
+2024-05-09 19:44:22,044 [DEBUG] in PIL.Image: Importing SgiImagePlugin
+2024-05-09 19:44:22,045 [DEBUG] in PIL.Image: Importing SpiderImagePlugin
+2024-05-09 19:44:22,045 [DEBUG] in PIL.Image: Importing SunImagePlugin
+2024-05-09 19:44:22,046 [DEBUG] in PIL.Image: Importing TgaImagePlugin
+2024-05-09 19:44:22,046 [DEBUG] in PIL.Image: Importing TiffImagePlugin
+2024-05-09 19:44:22,046 [DEBUG] in PIL.Image: Importing WebPImagePlugin
+2024-05-09 19:44:22,048 [DEBUG] in PIL.Image: Importing WmfImagePlugin
+2024-05-09 19:44:22,049 [DEBUG] in PIL.Image: Importing XbmImagePlugin
+2024-05-09 19:44:22,050 [DEBUG] in PIL.Image: Importing XpmImagePlugin
+2024-05-09 19:44:22,050 [DEBUG] in PIL.Image: Importing XVThumbImagePlugin
+2024-05-09 19:44:22,246 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:44:22,328 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 19:44:22,418 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:05:08,205 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 20:29:22,839 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 20:29:40,226 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 20:29:40,245 [ERROR] in django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "django_session" does not exist
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/middleware.py", line 169, in __call__
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/__init__.py", line 629, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "django_session" does not exist
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+2024-05-09 20:29:40,642 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:29:40,718 [ERROR] in django.request: Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "django_session" does not exist
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/middleware.py", line 169, in __call__
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/__init__.py", line 629, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "django_session" does not exist
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+2024-05-09 20:29:40,744 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:29:40,847 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:29:40,950 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:30:01,757 [ERROR] in django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "django_session" does not exist
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/middleware.py", line 169, in __call__
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/usr/local/lib/python3.12/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/utils.py", line 1711, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sentry_sdk/integrations/django/__init__.py", line 629, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "django_session" does not exist
+LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
+                                                             ^
+
+2024-05-09 20:30:01,812 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:30:01,941 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:24,897 [INFO] in django.utils.autoreload: Watching for file changes with StatReloader
+2024-05-09 20:31:28,656 [DEBUG] in urllib3.connectionpool: Starting new HTTPS connection (1): o4507220465876992.ingest.de.sentry.io:443
+2024-05-09 20:31:28,718 [WARNING] in django.request: Not Found: /shop/product1.jpg
+2024-05-09 20:31:28,723 [WARNING] in django.request: Not Found: /shop/product2.jpg
+2024-05-09 20:31:28,750 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-09 20:31:29,185 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:29,287 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:29,390 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:29,492 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:29,594 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:29,672 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:29,799 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:29,902 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:31:32,359 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:33:35,295 [DEBUG] in PIL.Image: Importing BlpImagePlugin
+2024-05-09 20:33:35,296 [DEBUG] in PIL.Image: Importing BmpImagePlugin
+2024-05-09 20:33:35,296 [DEBUG] in PIL.Image: Importing BufrStubImagePlugin
+2024-05-09 20:33:35,297 [DEBUG] in PIL.Image: Importing CurImagePlugin
+2024-05-09 20:33:35,297 [DEBUG] in PIL.Image: Importing DcxImagePlugin
+2024-05-09 20:33:35,298 [DEBUG] in PIL.Image: Importing DdsImagePlugin
+2024-05-09 20:33:35,300 [DEBUG] in PIL.Image: Importing EpsImagePlugin
+2024-05-09 20:33:35,301 [DEBUG] in PIL.Image: Importing FitsImagePlugin
+2024-05-09 20:33:35,302 [DEBUG] in PIL.Image: Importing FliImagePlugin
+2024-05-09 20:33:35,302 [DEBUG] in PIL.Image: Importing FpxImagePlugin
+2024-05-09 20:33:35,302 [DEBUG] in PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-05-09 20:33:35,302 [DEBUG] in PIL.Image: Importing FtexImagePlugin
+2024-05-09 20:33:35,303 [DEBUG] in PIL.Image: Importing GbrImagePlugin
+2024-05-09 20:33:35,303 [DEBUG] in PIL.Image: Importing GifImagePlugin
+2024-05-09 20:33:35,303 [DEBUG] in PIL.Image: Importing GribStubImagePlugin
+2024-05-09 20:33:35,303 [DEBUG] in PIL.Image: Importing Hdf5StubImagePlugin
+2024-05-09 20:33:35,303 [DEBUG] in PIL.Image: Importing IcnsImagePlugin
+2024-05-09 20:33:35,304 [DEBUG] in PIL.Image: Importing IcoImagePlugin
+2024-05-09 20:33:35,305 [DEBUG] in PIL.Image: Importing ImImagePlugin
+2024-05-09 20:33:35,305 [DEBUG] in PIL.Image: Importing ImtImagePlugin
+2024-05-09 20:33:35,306 [DEBUG] in PIL.Image: Importing IptcImagePlugin
+2024-05-09 20:33:35,306 [DEBUG] in PIL.Image: Importing JpegImagePlugin
+2024-05-09 20:33:35,306 [DEBUG] in PIL.Image: Importing Jpeg2KImagePlugin
+2024-05-09 20:33:35,306 [DEBUG] in PIL.Image: Importing McIdasImagePlugin
+2024-05-09 20:33:35,307 [DEBUG] in PIL.Image: Importing MicImagePlugin
+2024-05-09 20:33:35,307 [DEBUG] in PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-05-09 20:33:35,307 [DEBUG] in PIL.Image: Importing MpegImagePlugin
+2024-05-09 20:33:35,307 [DEBUG] in PIL.Image: Importing MpoImagePlugin
+2024-05-09 20:33:35,310 [DEBUG] in PIL.Image: Importing MspImagePlugin
+2024-05-09 20:33:35,310 [DEBUG] in PIL.Image: Importing PalmImagePlugin
+2024-05-09 20:33:35,311 [DEBUG] in PIL.Image: Importing PcdImagePlugin
+2024-05-09 20:33:35,311 [DEBUG] in PIL.Image: Importing PcxImagePlugin
+2024-05-09 20:33:35,311 [DEBUG] in PIL.Image: Importing PdfImagePlugin
+2024-05-09 20:33:35,315 [DEBUG] in PIL.Image: Importing PixarImagePlugin
+2024-05-09 20:33:35,316 [DEBUG] in PIL.Image: Importing PngImagePlugin
+2024-05-09 20:33:35,316 [DEBUG] in PIL.Image: Importing PpmImagePlugin
+2024-05-09 20:33:35,316 [DEBUG] in PIL.Image: Importing PsdImagePlugin
+2024-05-09 20:33:35,317 [DEBUG] in PIL.Image: Importing QoiImagePlugin
+2024-05-09 20:33:35,317 [DEBUG] in PIL.Image: Importing SgiImagePlugin
+2024-05-09 20:33:35,317 [DEBUG] in PIL.Image: Importing SpiderImagePlugin
+2024-05-09 20:33:35,318 [DEBUG] in PIL.Image: Importing SunImagePlugin
+2024-05-09 20:33:35,318 [DEBUG] in PIL.Image: Importing TgaImagePlugin
+2024-05-09 20:33:35,318 [DEBUG] in PIL.Image: Importing TiffImagePlugin
+2024-05-09 20:33:35,318 [DEBUG] in PIL.Image: Importing WebPImagePlugin
+2024-05-09 20:33:35,320 [DEBUG] in PIL.Image: Importing WmfImagePlugin
+2024-05-09 20:33:35,320 [DEBUG] in PIL.Image: Importing XbmImagePlugin
+2024-05-09 20:33:35,321 [DEBUG] in PIL.Image: Importing XpmImagePlugin
+2024-05-09 20:33:35,321 [DEBUG] in PIL.Image: Importing XVThumbImagePlugin
+2024-05-09 20:33:35,443 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:33:35,545 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:33:35,648 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:33:35,750 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:33:35,853 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:29,016 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:29,119 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:29,221 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:39,564 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:39,666 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:39,768 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:39,871 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:37:39,941 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:40:13,866 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:40:13,984 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:40:14,003 [WARNING] in django.request: Not Found: /favicon.ico
+2024-05-09 20:40:14,394 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:40:14,495 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:40:14,598 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:40:14,702 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0
+2024-05-09 20:40:14,801 [DEBUG] in urllib3.connectionpool: https://o4507220465876992.ingest.de.sentry.io:443 "POST /api/4507220471578704/envelope/ HTTP/1.1" 200 0

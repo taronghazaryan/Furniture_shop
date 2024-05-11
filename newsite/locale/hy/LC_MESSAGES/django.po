@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 11:44+0000\n"
+"POT-Creation-Date: 2024-04-07 13:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,54 +18,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: myauth/templates/myauth/user_page.html:57
+#: myauth/templates/myauth/login.html:30
+#, fuzzy
+#| msgid "User"
+msgid "Username"
+msgstr "Մուտքանուն"
+
+#: myauth/templates/myauth/login.html:35
+#, fuzzy
+#| msgid "Change Password"
+msgid "Password"
+msgstr "Գաղտնաբառ"
+
+#: myauth/templates/myauth/login.html:38
+msgid "Login"
+msgstr "Մուտք"
+
+#: myauth/templates/myauth/user_page.html:88
 msgid "User"
 msgstr "Օգտատեր"
 
-#: myauth/templates/myauth/user_page.html:59
+#: myauth/templates/myauth/user_page.html:99
 msgid "Email"
 msgstr "Էլ․ փոստ"
 
-#: myauth/templates/myauth/user_page.html:62
+#: myauth/templates/myauth/user_page.html:124
 msgid "Create Product"
 msgstr "Ստեղծել ապրանք"
 
-#: myauth/templates/myauth/user_page.html:64
-msgid "Create order"
-msgstr "Ստեղծել պատվեր"
-
-#: myauth/templates/myauth/user_page.html:66
+#: myauth/templates/myauth/user_page.html:125
 msgid "All Orders"
 msgstr "Բոլոր պատվերները"
 
-#: myauth/templates/myauth/user_page.html:68
+#: myauth/templates/myauth/user_page.html:127
 msgid "My Orders"
 msgstr "Իմ պատվերները"
 
-#: myauth/templates/myauth/user_page.html:70
+#: myauth/templates/myauth/user_page.html:129
+#, fuzzy
+#| msgid "Create Product"
+msgid "Products"
+msgstr "Ստեղծել ապրանք"
+
+#: myauth/templates/myauth/user_page.html:130
+msgid "Create order"
+msgstr "Ստեղծել պատվեր"
+
+#: myauth/templates/myauth/user_page.html:131
 msgid "Change Password"
 msgstr "Փոխել գաղտնաբառը"
 
-#: myauth/templates/myauth/user_page.html:71
+#: myauth/templates/myauth/user_page.html:132
 msgid "Edit Profile"
 msgstr "Խմբագրել հաշիվը"
 
-#: myauth/templates/myauth/user_page.html:72
+#: myauth/templates/myauth/user_page.html:133
 msgid "Logout"
 msgstr "Դուրս գալ"
 
-#: myauth/views.py:37
+#: myauth/views.py:39
 msgid "Invalid login or password!"
 msgstr "Սխալ մուտքանուն կամ գաղտնաբառ"
 
-#: newsite/settings.py:122
+#: newsite/settings.py:137
 msgid "Armenian"
 msgstr "Հայերեն"
 
-#: newsite/settings.py:123
+#: newsite/settings.py:138
 msgid "Russia"
 msgstr "Ռուսերեն"
 
-#: newsite/settings.py:124
+#: newsite/settings.py:139
 msgid "English"
 msgstr "Անգլերեն"

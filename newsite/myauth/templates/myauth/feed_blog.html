@@ -1,0 +1,92 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+    <title>Blog</title>
+{% endblock%}
+
+{% block body %}
+
+
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .author {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+
+        }
+        .author .profile {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+        }
+        .author h2 {
+            margin-top: 0;
+        }
+
+
+
+        .inlin {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inlin img{
+            display: inline;
+        }
+
+        .inlin h3{
+            display: inline ;
+        }
+
+        .author .blog{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+    </style>
+
+<div class="container">
+        <div class="author">
+            {% include 'blog/add_blog.html'%}
+        </div>
+        {% for item in data_3 %}
+             <div class="author">
+                 <div class="inlin">
+                     {% if item.user.profile.user_avatar %}
+                        <img  class="profile" src="{{ item.user.profile.user_avatar.url }}" alt="{{ user.avatar.name }}">
+                     {% endif %}
+                     <h3>@{{ item.user.username }}</h3>
+                     <h3>__{{ item.name }}</h3>
+
+
+
+                 </div>
+                 {% if item.image %}
+                    <img class="blog" src="{{ item.image.url }}">
+                 {% endif %}
+                 <p>{% lorem 3 p random %} </p>
+
+                 <h4>{{ item.created_at }}</h4>
+
+
+             </div>
+        {% endfor %}
+
+</div>
+
+
+{% endblock %}
+
+
+
+
+

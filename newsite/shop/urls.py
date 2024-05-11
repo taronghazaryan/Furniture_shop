@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from .views import (shop_index,
                     ListProductView,
                     CreateProductView,
@@ -10,12 +10,23 @@ from .views import (shop_index,
                     CreateOrderView,
                     UpdateOrderView,
                     DeleteOrderView,
-                    user_orders)
+                    user_orders,
+                    OrderViewSet,
+                    ProductViewSet,
+                    add_basket,
+                    delete_basket)
+
+from rest_framework.routers import DefaultRouter
 
 app_name = 'shop'
 
+routers = DefaultRouter()
+routers.register("products", ProductViewSet)
+routers.register("orders", OrderViewSet)
+
 urlpatterns = [
     path('', shop_index, name='index'),
+    path('api/', include(routers.urls)),
     path('products/', ListProductView.as_view(), name='products'),
     # path('orders/', ListOrderView.as_view(), name='orders'),
     path('product/add/', CreateProductView.as_view(), name='add_product'),
@@ -26,5 +37,7 @@ urlpatterns = [
     path('orders/<int:pk>/', DetailOrderView.as_view(), name='order_detail'),
     path('orders/<int:pk>/update', UpdateOrderView.as_view(), name='order_update'),
     path('orders/<int:pk>/delete', DeleteOrderView.as_view(), name='order_delete'),
-    path('orders/my/', user_orders, name='user_orders'),
+    path('orders/', user_orders, name='orders'),
+    path('add_basket/<int:product_pk>/', add_basket, name='add_basket'),
+    path('delete_basket/<int:product_id>/', delete_basket, name='delete_basket'),
 ]
